@@ -31,6 +31,18 @@
 		0971BA1829AF83BC007A03CC /* TvProgramResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1729AF83BC007A03CC /* TvProgramResponse.swift */; };
 		0971BA1A29AF83CA007A03CC /* TvChannelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1929AF83CA007A03CC /* TvChannelResponse.swift */; };
 		0971BA1D29AF83E9007A03CC /* TvGuideEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */; };
+		0971BA3C29AF9CA5007A03CC /* VMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA3A29AF9CA5007A03CC /* VMedia.xcdatamodeld */; };
+		0971BA4729AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA3D29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift */; };
+		0971BA4829AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA3E29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift */; };
+		0971BA4929AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA3F29AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift */; };
+		0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4029AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift */; };
+		0971BA4B29AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4129AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift */; };
+		0971BA4C29AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4229AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift */; };
+		0971BA4D29AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4329AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift */; };
+		0971BA4E29AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4429AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift */; };
+		0971BA4F29AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4529AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift */; };
+		0971BA5029AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */; };
+		0971BA5529AFA0AE007A03CC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -66,6 +78,18 @@
 		0971BA1729AF83BC007A03CC /* TvProgramResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgramResponse.swift; sourceTree = "<group>"; };
 		0971BA1929AF83CA007A03CC /* TvChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvChannelResponse.swift; sourceTree = "<group>"; };
 		0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideEndpoint.swift; sourceTree = "<group>"; };
+		0971BA3B29AF9CA5007A03CC /* VMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VMedia.xcdatamodel; sourceTree = "<group>"; };
+		0971BA3D29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedProgramAriTime+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0971BA3E29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedProgramAriTime+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0971BA3F29AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgramsCache+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0971BA4029AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgramsCache+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0971BA4129AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChannelsCache+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0971BA4229AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChannelsCache+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0971BA4329AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedProgram+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0971BA4429AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedProgram+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0971BA4529AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedChannel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedChannel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -234,6 +258,7 @@
 		0971B9FE29AF3204007A03CC /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0971BA3929AF9C89007A03CC /* CoreData */,
 				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
 				0971BA0829AF3A9C007A03CC /* Application */,
 			);
@@ -307,6 +332,49 @@
 				0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */,
 			);
 			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		0971BA3929AF9C89007A03CC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5129AF9E1E007A03CC /* Objects */,
+				0971BA3A29AF9CA5007A03CC /* VMedia.xcdatamodeld */,
+				0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0971BA5129AF9E1E007A03CC /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5229AF9E26007A03CC /* Class */,
+				0971BA5329AF9E3F007A03CC /* Managed */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		0971BA5229AF9E26007A03CC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA3F29AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift */,
+				0971BA4129AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift */,
+				0971BA4329AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift */,
+				0971BA4529AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift */,
+				0971BA3D29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		0971BA5329AF9E3F007A03CC /* Managed */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA4229AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift */,
+				0971BA4029AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift */,
+				0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */,
+				0971BA4429AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift */,
+				0971BA3E29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift */,
+			);
+			path = Managed;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -483,22 +551,34 @@
 				0971BA0C29AF3BC5007A03CC /* TvGuideLocalDataService.swift in Sources */,
 				0971B9F929AF3180007A03CC /* TvChannel.swift in Sources */,
 				0971B9F329AF3087007A03CC /* TvGuideInteractorProtocol.swift in Sources */,
+				0971BA5029AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift in Sources */,
 				0971B9EC29AF2F72007A03CC /* TvGuideView.swift in Sources */,
 				0971B9F729AF3111007A03CC /* TvGuidePresenterProtocol.swift in Sources */,
+				0971BA4B29AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift in Sources */,
 				0971BA0429AF3382007A03CC /* RouterAssembly.swift in Sources */,
+				0971BA5529AFA0AE007A03CC /* CoreDataStack.swift in Sources */,
 				09C4D0CD29ADDECB008D6DD0 /* StoryboardLoadable.swift in Sources */,
 				0971B9EE29AF302D007A03CC /* TvGuideInteractor.swift in Sources */,
+				0971BA4829AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift in Sources */,
 				09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */,
+				0971BA4C29AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift in Sources */,
 				0971BA0729AF34FF007A03CC /* App.swift in Sources */,
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
 				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
+				0971BA4D29AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift in Sources */,
 				0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */,
+				0971BA4729AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift in Sources */,
+				0971BA4F29AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift in Sources */,
+				0971BA3C29AF9CA5007A03CC /* VMedia.xcdatamodeld in Sources */,
 				0971BA1329AF4492007A03CC /* Router.swift in Sources */,
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
+				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
 				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,
 				0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */,
+				0971BA4E29AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift in Sources */,
 				09C4D0C929ADDE8B008D6DD0 /* TvGuideViewController.swift in Sources */,
+				0971BA4929AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift in Sources */,
 				0971BA0F29AF3DCF007A03CC /* TvGuideAssembly.swift in Sources */,
 				092BB68A29AF29F600679B39 /* NetworkClient.swift in Sources */,
 			);
@@ -710,6 +790,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0971BA3A29AF9CA5007A03CC /* VMedia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0971BA3B29AF9CA5007A03CC /* VMedia.xcdatamodel */,
+			);
+			currentVersion = 0971BA3B29AF9CA5007A03CC /* VMedia.xcdatamodel */;
+			path = VMedia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 09C4D0A929ADDE24008D6DD0 /* Project object */;
 }

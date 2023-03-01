@@ -8,6 +8,7 @@
 import Foundation
 
 struct TvProgram {
+    
     let startTime: String
     let recentAirTime: RecentAirTime
     let length: Int
@@ -19,9 +20,17 @@ struct TvProgram {
         self.length = response.length
         self.name = response.name
     }
+    
+    init(startTime: String, recentAirTime: RecentAirTime, length: Int, name: String) {
+        self.startTime = startTime
+        self.recentAirTime = recentAirTime
+        self.length = length
+        self.name = name
+    }
 }
 
 struct RecentAirTime: Codable {
+    
     let id: Int
     let channelID: Int
     
@@ -29,4 +38,10 @@ struct RecentAirTime: Codable {
         self.id = response.id
         self.channelID = response.channelID
     }
+    
+    init(id: Int, channelID: Int) {
+        self.id = id
+        self.channelID = channelID
+    }
+    
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ChannelsCache" representedClassName="ChannelsCache" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="channels" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ManagedChannel" inverseName="cache" inverseEntity="ManagedChannel"/>
+    </entity>
+    <entity name="ManagedChannel" representedClassName="ManagedChannel" syncable="YES">
+        <attribute name="accessNuj" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="callSign" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderNum" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="cache" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChannelsCache" inverseName="channels" inverseEntity="ChannelsCache"/>
+    </entity>
+    <entity name="ManagedProgram" representedClassName="ManagedProgram" syncable="YES">
+        <attribute name="length" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="String"/>
+        <relationship name="airTime" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedProgramAriTime" inverseName="program" inverseEntity="ManagedProgramAriTime"/>
+        <relationship name="cache" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProgramsCache" inverseName="programs" inverseEntity="ProgramsCache"/>
+    </entity>
+    <entity name="ManagedProgramAriTime" representedClassName="ManagedProgramAriTime" syncable="YES">
+        <attribute name="channelID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="program" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ManagedProgram" inverseName="airTime" inverseEntity="ManagedProgram"/>
+    </entity>
+    <entity name="ProgramsCache" representedClassName="ProgramsCache" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="programs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ManagedProgram" inverseName="cache" inverseEntity="ManagedProgram"/>
+    </entity>
+</model>

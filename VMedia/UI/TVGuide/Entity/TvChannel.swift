@@ -8,6 +8,7 @@
 import Foundation
 
 struct TvChannel {
+    
     let orderNum: Int
     let accessNum: Int
     let callSign: String
@@ -18,5 +19,12 @@ struct TvChannel {
         self.accessNum = response.accessNum
         self.callSign = response.callSign
         self.id = response.id
+    }
+    
+    init(orderNum: Int, accessNum: Int, callSign: String, id: Int) {
+        self.orderNum = orderNum
+        self.accessNum = accessNum
+        self.callSign = callSign
+        self.id = id
     }
 }

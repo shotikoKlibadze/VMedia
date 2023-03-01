@@ -11,7 +11,7 @@ final class InteractorAssembly: Assembly {
     
     func assemble(container: Swinject.Container) {
         container.register(UI.TvGuide.Interactor.self) { _ in
-            let interactor = UI.TvGuide.Interactor(with: TvGuideLocalDataRepository())
+            let interactor = UI.TvGuide.Interactor(with: CoreDataStack(modelName: "VMedia"))
             return interactor
         }
     }
