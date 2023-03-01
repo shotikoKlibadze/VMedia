@@ -3,27 +3,75 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092BB68829AF29EC00679B39 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BB68729AF29EC00679B39 /* Network.swift */; };
+		092BB68A29AF29F600679B39 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BB68929AF29F600679B39 /* NetworkClient.swift */; };
+		0971B9DD29AF2A69007A03CC /* VMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9DC29AF2A69007A03CC /* VMError.swift */; };
+		0971B9E129AF2AB4007A03CC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9E029AF2AB4007A03CC /* Endpoint.swift */; };
+		0971B9EC29AF2F72007A03CC /* TvGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9EB29AF2F72007A03CC /* TvGuideView.swift */; };
+		0971B9EE29AF302D007A03CC /* TvGuideInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9ED29AF302D007A03CC /* TvGuideInteractor.swift */; };
+		0971B9F029AF303B007A03CC /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9EF29AF303B007A03CC /* UI.swift */; };
+		0971B9F329AF3087007A03CC /* TvGuideInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9F229AF3087007A03CC /* TvGuideInteractorProtocol.swift */; };
+		0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9F429AF3100007A03CC /* TvGuidePresenter.swift */; };
+		0971B9F729AF3111007A03CC /* TvGuidePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9F629AF3111007A03CC /* TvGuidePresenterProtocol.swift */; };
+		0971B9F929AF3180007A03CC /* TvChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9F829AF3180007A03CC /* TvChannel.swift */; };
+		0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9FA29AF318C007A03CC /* TvProgram.swift */; };
+		0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9FC29AF3198007A03CC /* TvGuideRouter.swift */; };
+		0971BA0029AF334A007A03CC /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971B9FF29AF334A007A03CC /* Resolver.swift */; };
+		0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0129AF3357007A03CC /* InteractorAssembly.swift */; };
+		0971BA0429AF3382007A03CC /* RouterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0329AF3382007A03CC /* RouterAssembly.swift */; };
+		0971BA0729AF34FF007A03CC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0629AF34FF007A03CC /* App.swift */; };
+		0971BA0C29AF3BC5007A03CC /* TvGuideLocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0B29AF3BC5007A03CC /* TvGuideLocalDataService.swift */; };
+		0971BA0F29AF3DCF007A03CC /* TvGuideAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0E29AF3DCF007A03CC /* TvGuideAssembly.swift */; };
+		0971BA1329AF4492007A03CC /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1229AF4492007A03CC /* MainRouter.swift */; };
+		0971BA1529AF4841007A03CC /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1429AF4841007A03CC /* Presentable.swift */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
-		09C4D0B929ADDE24008D6DD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B829ADDE24008D6DD0 /* ViewController.swift */; };
-		09C4D0BC29ADDE24008D6DD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BA29ADDE24008D6DD0 /* Main.storyboard */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
 		09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BF29ADDE26008D6DD0 /* LaunchScreen.storyboard */; };
+		09C4D0C929ADDE8B008D6DD0 /* TvGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */; };
+		09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */; };
+		09C4D0CD29ADDECB008D6DD0 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0CC29ADDECB008D6DD0 /* StoryboardLoadable.swift */; };
+		DBE431714E9FB3F0443FB59F /* Pods_VMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51556FA96F655CB66CE2D39 /* Pods_VMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092BB68729AF29EC00679B39 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		092BB68929AF29F600679B39 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		0971B9DC29AF2A69007A03CC /* VMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMError.swift; sourceTree = "<group>"; };
+		0971B9E029AF2AB4007A03CC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		0971B9EB29AF2F72007A03CC /* TvGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideView.swift; sourceTree = "<group>"; };
+		0971B9ED29AF302D007A03CC /* TvGuideInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideInteractor.swift; sourceTree = "<group>"; };
+		0971B9EF29AF303B007A03CC /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		0971B9F229AF3087007A03CC /* TvGuideInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideInteractorProtocol.swift; sourceTree = "<group>"; };
+		0971B9F429AF3100007A03CC /* TvGuidePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuidePresenter.swift; sourceTree = "<group>"; };
+		0971B9F629AF3111007A03CC /* TvGuidePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuidePresenterProtocol.swift; sourceTree = "<group>"; };
+		0971B9F829AF3180007A03CC /* TvChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvChannel.swift; sourceTree = "<group>"; };
+		0971B9FA29AF318C007A03CC /* TvProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgram.swift; sourceTree = "<group>"; };
+		0971B9FC29AF3198007A03CC /* TvGuideRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideRouter.swift; sourceTree = "<group>"; };
+		0971B9FF29AF334A007A03CC /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		0971BA0129AF3357007A03CC /* InteractorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorAssembly.swift; sourceTree = "<group>"; };
+		0971BA0329AF3382007A03CC /* RouterAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterAssembly.swift; sourceTree = "<group>"; };
+		0971BA0629AF34FF007A03CC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		0971BA0B29AF3BC5007A03CC /* TvGuideLocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideLocalDataService.swift; sourceTree = "<group>"; };
+		0971BA0E29AF3DCF007A03CC /* TvGuideAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideAssembly.swift; sourceTree = "<group>"; };
+		0971BA1229AF4492007A03CC /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		0971BA1429AF4841007A03CC /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09C4D0B829ADDE24008D6DD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		09C4D0BB29ADDE24008D6DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09C4D0C029ADDE26008D6DD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C4D0C229ADDE26008D6DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideViewController.swift; sourceTree = "<group>"; };
+		09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TvGuideViewController.storyboard; sourceTree = "<group>"; };
+		09C4D0CC29ADDECB008D6DD0 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		641779FF31D4427C840EEAED /* Pods-VMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMedia.release.xcconfig"; path = "Target Support Files/Pods-VMedia/Pods-VMedia.release.xcconfig"; sourceTree = "<group>"; };
+		D236C071FE4840985CE1B058 /* Pods-VMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMedia.debug.xcconfig"; path = "Target Support Files/Pods-VMedia/Pods-VMedia.debug.xcconfig"; sourceTree = "<group>"; };
+		E51556FA96F655CB66CE2D39 /* Pods_VMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +79,218 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE431714E9FB3F0443FB59F /* Pods_VMedia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092BB68429AF297800679B39 /* MainDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */,
+				09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */,
+			);
+			path = MainDelegates;
+			sourceTree = "<group>";
+		};
+		092BB68529AF298D00679B39 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				09C4D0CC29ADDECB008D6DD0 /* StoryboardLoadable.swift */,
+				0971BA1429AF4841007A03CC /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		092BB68629AF29D600679B39 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9DE29AF2A90007A03CC /* Endpoint */,
+				0971B9DB29AF2A5B007A03CC /* Error */,
+				092BB68729AF29EC00679B39 /* Network.swift */,
+				092BB68929AF29F600679B39 /* NetworkClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		0971B9DB29AF2A5B007A03CC /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9DC29AF2A69007A03CC /* VMError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		0971B9DE29AF2A90007A03CC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9DF29AF2A9D007A03CC /* Protocol */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		0971B9DF29AF2A9D007A03CC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9E029AF2AB4007A03CC /* Endpoint.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0971B9E229AF2C03007A03CC /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				09C4D0BF29ADDE26008D6DD0 /* LaunchScreen.storyboard */,
+				09C4D0C229ADDE26008D6DD0 /* Info.plist */,
+			);
+			path = SupportingFIles;
+			sourceTree = "<group>";
+		};
+		0971B9E329AF2C18007A03CC /* Recourses */ = {
+			isa = PBXGroup;
+			children = (
+				09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */,
+			);
+			path = Recourses;
+			sourceTree = "<group>";
+		};
+		0971B9E429AF2C6E007A03CC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9EF29AF303B007A03CC /* UI.swift */,
+				0971B9E529AF2C77007A03CC /* TVGuide */,
+				09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */,
+				09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		0971B9E529AF2C77007A03CC /* TVGuide */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0D29AF3DB3007A03CC /* Assembly */,
+				0971B9E929AF2D3B007A03CC /* View */,
+				0971B9E829AF2D39007A03CC /* Interactor */,
+				0971B9EA29AF2F40007A03CC /* Presenter */,
+				0971B9E629AF2D33007A03CC /* Entity */,
+				0971B9E729AF2D36007A03CC /* Router */,
+			);
+			path = TVGuide;
+			sourceTree = "<group>";
+		};
+		0971B9E629AF2D33007A03CC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9F829AF3180007A03CC /* TvChannel.swift */,
+				0971B9FA29AF318C007A03CC /* TvProgram.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0971B9E729AF2D36007A03CC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9FC29AF3198007A03CC /* TvGuideRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0971B9E829AF2D39007A03CC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9ED29AF302D007A03CC /* TvGuideInteractor.swift */,
+				0971B9F229AF3087007A03CC /* TvGuideInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0971B9E929AF2D3B007A03CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9EB29AF2F72007A03CC /* TvGuideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0971B9EA29AF2F40007A03CC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9F429AF3100007A03CC /* TvGuidePresenter.swift */,
+				0971B9F629AF3111007A03CC /* TvGuidePresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0971B9FE29AF3204007A03CC /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
+				0971BA0829AF3A9C007A03CC /* Application */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		0971BA0529AF34EE007A03CC /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				0971B9FF29AF334A007A03CC /* Resolver.swift */,
+				0971BA0129AF3357007A03CC /* InteractorAssembly.swift */,
+				0971BA0329AF3382007A03CC /* RouterAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		0971BA0829AF3A9C007A03CC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0629AF34FF007A03CC /* App.swift */,
+				0971BA1029AF445C007A03CC /* Navigation */,
+				0971BA0529AF34EE007A03CC /* DI */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0971BA0929AF3AB0007A03CC /* LocalDataServices */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0A29AF3BB2007A03CC /* TvGuideLocalDataService */,
+			);
+			path = LocalDataServices;
+			sourceTree = "<group>";
+		};
+		0971BA0A29AF3BB2007A03CC /* TvGuideLocalDataService */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0B29AF3BC5007A03CC /* TvGuideLocalDataService.swift */,
+			);
+			path = TvGuideLocalDataService;
+			sourceTree = "<group>";
+		};
+		0971BA0D29AF3DB3007A03CC /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA0E29AF3DCF007A03CC /* TvGuideAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0971BA1029AF445C007A03CC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA1229AF4492007A03CC /* MainRouter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		09C4D0A829ADDE24008D6DD0 = {
 			isa = PBXGroup;
 			children = (
 				09C4D0B329ADDE24008D6DD0 /* VMedia */,
 				09C4D0B229ADDE24008D6DD0 /* Products */,
+				76E946FF020339B7BB6D36CD /* Pods */,
+				C9DF9B97BE4402CCECD4E952 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +305,32 @@
 		09C4D0B329ADDE24008D6DD0 /* VMedia */ = {
 			isa = PBXGroup;
 			children = (
-				09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */,
-				09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */,
-				09C4D0B829ADDE24008D6DD0 /* ViewController.swift */,
-				09C4D0BA29ADDE24008D6DD0 /* Main.storyboard */,
-				09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */,
-				09C4D0BF29ADDE26008D6DD0 /* LaunchScreen.storyboard */,
-				09C4D0C229ADDE26008D6DD0 /* Info.plist */,
+				092BB68429AF297800679B39 /* MainDelegates */,
+				092BB68529AF298D00679B39 /* Protocols */,
+				0971B9FE29AF3204007A03CC /* Logic */,
+				0971B9E429AF2C6E007A03CC /* UI */,
+				0971B9E229AF2C03007A03CC /* SupportingFIles */,
+				0971B9E329AF2C18007A03CC /* Recourses */,
+				092BB68629AF29D600679B39 /* Networking */,
 			);
 			path = VMedia;
+			sourceTree = "<group>";
+		};
+		76E946FF020339B7BB6D36CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D236C071FE4840985CE1B058 /* Pods-VMedia.debug.xcconfig */,
+				641779FF31D4427C840EEAED /* Pods-VMedia.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9DF9B97BE4402CCECD4E952 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51556FA96F655CB66CE2D39 /* Pods_VMedia.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +340,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09C4D0C529ADDE26008D6DD0 /* Build configuration list for PBXNativeTarget "VMedia" */;
 			buildPhases = (
+				397E3E1AC6D2880B29FCA524 /* [CP] Check Pods Manifest.lock */,
 				09C4D0AD29ADDE24008D6DD0 /* Sources */,
 				09C4D0AE29ADDE24008D6DD0 /* Frameworks */,
 				09C4D0AF29ADDE24008D6DD0 /* Resources */,
+				B3BCF08271CC8C0F069EA4D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +371,7 @@
 				};
 			};
 			buildConfigurationList = 09C4D0AC29ADDE24008D6DD0 /* Build configuration list for PBXProject "VMedia" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,36 +393,92 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */,
 				09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */,
 				09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */,
-				09C4D0BC29ADDE24008D6DD0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397E3E1AC6D2880B29FCA524 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VMedia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3BCF08271CC8C0F069EA4D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VMedia/Pods-VMedia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VMedia/Pods-VMedia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VMedia/Pods-VMedia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		09C4D0AD29ADDE24008D6DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09C4D0B929ADDE24008D6DD0 /* ViewController.swift in Sources */,
+				092BB68829AF29EC00679B39 /* Network.swift in Sources */,
+				0971B9DD29AF2A69007A03CC /* VMError.swift in Sources */,
+				0971B9E129AF2AB4007A03CC /* Endpoint.swift in Sources */,
+				0971BA0029AF334A007A03CC /* Resolver.swift in Sources */,
+				0971BA0C29AF3BC5007A03CC /* TvGuideLocalDataService.swift in Sources */,
+				0971B9F929AF3180007A03CC /* TvChannel.swift in Sources */,
+				0971B9F329AF3087007A03CC /* TvGuideInteractorProtocol.swift in Sources */,
+				0971B9EC29AF2F72007A03CC /* TvGuideView.swift in Sources */,
+				0971B9F729AF3111007A03CC /* TvGuidePresenterProtocol.swift in Sources */,
+				0971BA0429AF3382007A03CC /* RouterAssembly.swift in Sources */,
+				09C4D0CD29ADDECB008D6DD0 /* StoryboardLoadable.swift in Sources */,
+				0971B9EE29AF302D007A03CC /* TvGuideInteractor.swift in Sources */,
 				09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */,
+				0971BA0729AF34FF007A03CC /* App.swift in Sources */,
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
+				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
+				0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */,
+				0971BA1329AF4492007A03CC /* MainRouter.swift in Sources */,
+				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
+				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
+				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,
+				0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */,
+				09C4D0C929ADDE8B008D6DD0 /* TvGuideViewController.swift in Sources */,
+				0971BA0F29AF3DCF007A03CC /* TvGuideAssembly.swift in Sources */,
+				092BB68A29AF29F600679B39 /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		09C4D0BA29ADDE24008D6DD0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09C4D0BB29ADDE24008D6DD0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		09C4D0BF29ADDE26008D6DD0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +606,7 @@
 		};
 		09C4D0C629ADDE26008D6DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D236C071FE4840985CE1B058 /* Pods-VMedia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,10 +614,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZ3GM4S56F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VMedia/Info.plist;
+				INFOPLIST_FILE = VMedia/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +634,7 @@
 		};
 		09C4D0C729ADDE26008D6DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641779FF31D4427C840EEAED /* Pods-VMedia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,10 +642,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XZ3GM4S56F;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VMedia/Info.plist;
+				INFOPLIST_FILE = VMedia/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

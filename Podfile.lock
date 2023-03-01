@@ -1,0 +1,20 @@
+PODS:
+  - ProgressHUD (13.6.2)
+  - Swinject (2.8.2)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - ProgressHUD
+    - Swinject
+
+SPEC CHECKSUMS:
+  ProgressHUD: 355915c8f033e626788fa9b0d99d06e8691595ab
+  Swinject: b4a11b31992e8668308dc594ba1cb9b3164a37ab
+
+PODFILE CHECKSUM: 4c4980049e5eeef38778b075095fce0a5b6f4a3c
+
+COCOAPODS: 1.11.3
