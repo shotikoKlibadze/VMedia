@@ -13,7 +13,6 @@ extension App {
         
         static func resolveDependenices() -> Assembler? {
             let tvGuideAssembly: [Assembly] = [UI.TvGuide.Assembly()]
-            
             let moduleAssembler = Assembler(tvGuideAssembly, parent:  resolveInteractors())
             let assembler = Assembler([RouterAssembly()], parent: moduleAssembler)
             return assembler

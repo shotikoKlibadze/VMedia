@@ -26,8 +26,11 @@
 		0971BA0729AF34FF007A03CC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0629AF34FF007A03CC /* App.swift */; };
 		0971BA0C29AF3BC5007A03CC /* TvGuideLocalDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0B29AF3BC5007A03CC /* TvGuideLocalDataService.swift */; };
 		0971BA0F29AF3DCF007A03CC /* TvGuideAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA0E29AF3DCF007A03CC /* TvGuideAssembly.swift */; };
-		0971BA1329AF4492007A03CC /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1229AF4492007A03CC /* MainRouter.swift */; };
+		0971BA1329AF4492007A03CC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1229AF4492007A03CC /* Router.swift */; };
 		0971BA1529AF4841007A03CC /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1429AF4841007A03CC /* Presentable.swift */; };
+		0971BA1829AF83BC007A03CC /* TvProgramResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1729AF83BC007A03CC /* TvProgramResponse.swift */; };
+		0971BA1A29AF83CA007A03CC /* TvChannelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1929AF83CA007A03CC /* TvChannelResponse.swift */; };
+		0971BA1D29AF83E9007A03CC /* TvGuideEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -58,8 +61,11 @@
 		0971BA0629AF34FF007A03CC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		0971BA0B29AF3BC5007A03CC /* TvGuideLocalDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideLocalDataService.swift; sourceTree = "<group>"; };
 		0971BA0E29AF3DCF007A03CC /* TvGuideAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideAssembly.swift; sourceTree = "<group>"; };
-		0971BA1229AF4492007A03CC /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		0971BA1229AF4492007A03CC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		0971BA1429AF4841007A03CC /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		0971BA1729AF83BC007A03CC /* TvProgramResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgramResponse.swift; sourceTree = "<group>"; };
+		0971BA1929AF83CA007A03CC /* TvChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvChannelResponse.swift; sourceTree = "<group>"; };
+		0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideEndpoint.swift; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		092BB68629AF29D600679B39 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0971BA1629AF839B007A03CC /* Responses */,
 				0971B9DE29AF2A90007A03CC /* Endpoint */,
 				0971B9DB29AF2A5B007A03CC /* Error */,
 				092BB68729AF29EC00679B39 /* Network.swift */,
@@ -126,6 +133,7 @@
 		0971B9DE29AF2A90007A03CC /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
+				0971BA1B29AF83D9007A03CC /* Endpoint */,
 				0971B9DF29AF2A9D007A03CC /* Protocol */,
 			);
 			path = Endpoint;
@@ -279,9 +287,26 @@
 		0971BA1029AF445C007A03CC /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA1229AF4492007A03CC /* MainRouter.swift */,
+				0971BA1229AF4492007A03CC /* Router.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0971BA1629AF839B007A03CC /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA1729AF83BC007A03CC /* TvProgramResponse.swift */,
+				0971BA1929AF83CA007A03CC /* TvChannelResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		0971BA1B29AF83D9007A03CC /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA1C29AF83E9007A03CC /* TvGuideEndpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -448,8 +473,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0971BA1829AF83BC007A03CC /* TvProgramResponse.swift in Sources */,
+				0971BA1D29AF83E9007A03CC /* TvGuideEndpoint.swift in Sources */,
 				092BB68829AF29EC00679B39 /* Network.swift in Sources */,
 				0971B9DD29AF2A69007A03CC /* VMError.swift in Sources */,
+				0971BA1A29AF83CA007A03CC /* TvChannelResponse.swift in Sources */,
 				0971B9E129AF2AB4007A03CC /* Endpoint.swift in Sources */,
 				0971BA0029AF334A007A03CC /* Resolver.swift in Sources */,
 				0971BA0C29AF3BC5007A03CC /* TvGuideLocalDataService.swift in Sources */,
@@ -465,7 +493,7 @@
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
 				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
 				0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */,
-				0971BA1329AF4492007A03CC /* MainRouter.swift in Sources */,
+				0971BA1329AF4492007A03CC /* Router.swift in Sources */,
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
 				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,

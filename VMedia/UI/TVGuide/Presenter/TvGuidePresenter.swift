@@ -23,31 +23,31 @@ extension UI.TvGuide.Presenter: TvGuidePresenter {
     }
 }
 
-
 extension UI.TvGuide.Presenter: TvGuideViewOutput {
     
     func viewDidLoad() {
-        interactor?.fetchTvChannels()
-        interactor?.fetchTvPrograms()
+        Task {
+            await interactor?.fetchTvChannels()
+            await interactor?.fetchTvPrograms()
+        }        
     }
 }
 
 extension UI.TvGuide.Presenter: TvGuideInteractorOutput {
     
-    
     func didFetchTvChannels(tvChannels: [TvChannel]) {
-        
+        print("tvChannels:", tvChannels.count)
     }
     
     func didFetchTvProgramms(tvProgramms: [TvProgram]) {
-        
+        print("tvProgramms:", tvProgramms.count)
     }
     
     func errorFetchingTvProgramms(error: VMError) {
-        
+        print(error.errorDescription)
     }
     
     func errorFetchingTvChannels(error: VMError) {
-        
+        print(error.errorDescription)
     }
 }

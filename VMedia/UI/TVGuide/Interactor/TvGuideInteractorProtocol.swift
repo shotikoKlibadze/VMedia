@@ -8,8 +8,8 @@
 import Foundation
 
 protocol TvGuideInteractor: AnyObject {
-    func fetchTvPrograms()
-    func fetchTvChannels()
+    func fetchTvPrograms() async
+    func fetchTvChannels() async
 }
 
 protocol TvGuideInteractorOutput: AnyObject {

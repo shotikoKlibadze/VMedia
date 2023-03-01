@@ -12,7 +12,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     private var assembler: Assembler!
-    private var appRouter: MainRouter!
+    private var appRouter: App.Router!
     
     lazy var rootController: UINavigationController = {
         let rootController = UINavigationController()
@@ -44,7 +44,7 @@ private extension SceneDelegate {
     }
     
     func start() {
-        let baseRouter = assembler.resolver.resolve(MainRouter.self, argument: rootController)
+        let baseRouter = assembler.resolver.resolve(App.Router.self, argument: rootController)
         appRouter = baseRouter
         baseRouter?.show(animated: false)
     }

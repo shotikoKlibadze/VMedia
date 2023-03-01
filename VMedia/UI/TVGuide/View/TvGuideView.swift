@@ -8,7 +8,7 @@
 import Foundation
 
 protocol TvGuidView: Presentable {
-    
+
 }
 
 protocol TvGuideViewOutput: AnyObject {

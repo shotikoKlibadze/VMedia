@@ -8,23 +8,25 @@
 import UIKit
 import Swinject
 
-class MainRouter {
-
-    var rootController: UINavigationController
-    var resolver: Resolver
-
-    init(rootController: UINavigationController, routerResolver: Resolver) {
-        self.rootController = rootController
-        self.resolver = routerResolver
-    }
+extension App {
     
-    func show(animated: Bool) {
-        showTvGuide(animated: animated)
+     class Router {
+
+        var rootController: UINavigationController
+        var resolver: Resolver
+
+        init(rootController: UINavigationController, routerResolver: Resolver) {
+            self.rootController = rootController
+            self.resolver = routerResolver
+        }
+        
+        func show(animated: Bool) {
+            showTvGuide(animated: animated)
+        }
     }
 }
 
-
-private extension MainRouter {
+private extension App.Router {
     
     private func showTvGuide(animated: Bool) {
         guard let router = resolver.resolve(TvGuideRouter.self, argument: rootController) else {
@@ -36,7 +38,7 @@ private extension MainRouter {
 }
 
 
-extension MainRouter {
+extension App.Router {
     
     func present(_ module: Presentable?) {
         present(module, animated: true)

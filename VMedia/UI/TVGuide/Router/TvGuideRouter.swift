@@ -9,7 +9,7 @@ import UIKit
 import Swinject
 
 
-final class TvGuideRouter: MainRouter {
+final class TvGuideRouter: App.Router {
     
     var presenter: TvGuidePresenter?
     

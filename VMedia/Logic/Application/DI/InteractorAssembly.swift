@@ -16,4 +16,3 @@ final class InteractorAssembly: Assembly {
         }
     }
 }
-
