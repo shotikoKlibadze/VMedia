@@ -43,6 +43,7 @@
 		0971BA4F29AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4529AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift */; };
 		0971BA5029AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */; };
 		0971BA5529AFA0AE007A03CC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */; };
+		0971BA5829B09F48007A03CC /* ChachedDataPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -90,6 +91,7 @@
 		0971BA4529AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedChannel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedChannel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChachedDataPolicy.swift; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		0971B9FE29AF3204007A03CC /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0971BA5629B09F3A007A03CC /* Helpers */,
 				0971BA3929AF9C89007A03CC /* CoreData */,
 				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
 				0971BA0829AF3A9C007A03CC /* Application */,
@@ -375,6 +378,14 @@
 				0971BA3E29AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift */,
 			);
 			path = Managed;
+			sourceTree = "<group>";
+		};
+		0971BA5629B09F3A007A03CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -574,6 +585,7 @@
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
 				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
+				0971BA5829B09F48007A03CC /* ChachedDataPolicy.swift in Sources */,
 				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,
 				0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */,
 				0971BA4E29AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift in Sources */,
