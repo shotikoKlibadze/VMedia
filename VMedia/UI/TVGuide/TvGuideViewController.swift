@@ -31,23 +31,5 @@ class TvGuideViewController: UIViewController, StoryboardLoadable, TvGuidView {
         collection.forEach { collection in
             tvProgramsStackView.addArrangedSubview(collection.arrangedViews)
         }
-        addTimeStack()
-    }
-    
-    func addTimeStack() {
-        let timeStack = UIStackView()
-        timeStack.axis = .horizontal
-        for _ in 0...47 {
-            let view = UIView()
-            view.backgroundColor = .yellow
-            view.translatesAutoresizingMaskIntoConstraints = false
-            view.widthAnchor.constraint(equalToConstant: 150).isActive = true
-            view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-            view.layer.borderWidth = 1
-            view.layer.borderColor = UIColor.green.cgColor
-            timeStack.addArrangedSubview(view)
-        }
-        tvProgramsStackView.insertArrangedSubview(timeStack, at: 0)
-        view.layoutIfNeeded()
     }
 }

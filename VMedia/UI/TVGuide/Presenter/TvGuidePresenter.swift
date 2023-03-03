@@ -15,6 +15,7 @@ extension UI.TvGuide {
         var router: TvGuideRouter?
         var view: TvGuidView?
         var builder = ChannelCollectionBuilder()
+        var programBuilder = TvProgramScheduleBuilder()
     }
 }
 
@@ -27,6 +28,7 @@ extension UI.TvGuide.Presenter: TvGuidePresenter {
 extension UI.TvGuide.Presenter: TvGuideViewOutput {
     
     func viewDidLoad() {
+        bind()
         interactor?.fetchTvChannels()
         interactor?.fetchTvPrograms()
     }
@@ -35,12 +37,14 @@ extension UI.TvGuide.Presenter: TvGuideViewOutput {
 extension UI.TvGuide.Presenter: TvGuideInteractorOutput {
     
     func didFetchTvChannels(tvChannels: [TvChannel]) {
-        buildChannelViews(from: tvChannels)
+        //buildChannelViews(from: tvChannels)
+        programBuilder.recieveChannels(channels: tvChannels)
     }
     
     func didFetchTvProgramms(tvProgramms: [TvProgram]) {
-        builder.recieveTvPrograms(programs: tvProgramms)
-        updateViewWithPrograms()
+        //builder.recieveTvPrograms(programs: tvProgramms)
+        //updateViewWithPrograms()
+        programBuilder.recievePrograms(programs: tvProgramms)
     }
     
     func errorFetchingTvProgramms(error: VMError) {
@@ -53,6 +57,14 @@ extension UI.TvGuide.Presenter: TvGuideInteractorOutput {
 }
 
 private extension UI.TvGuide.Presenter {
+    
+    func bind() {
+        programBuilder.programSchedule = { [weak self] schedule in
+            DispatchQueue.main.async {
+                self?.view?.tvProgramSchedule(schedule: schedule)
+            }
+        }
+    }
     
     func buildChannelViews(from channels: [TvChannel]) {
         var views = [ChannelView]()

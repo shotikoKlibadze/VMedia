@@ -55,6 +55,15 @@
 		0971BA7829B0F863007A03CC /* NSObject + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7729B0F863007A03CC /* NSObject + Extension.swift */; };
 		0971BA7A29B1033C007A03CC /* ChannelProgramCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */; };
 		0971BA7C29B1096F007A03CC /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7B29B1096F007A03CC /* UIView + Extension.swift */; };
+		0971BA7F29B1E3F1007A03CC /* TvGuideViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7E29B1E3F1007A03CC /* TvGuideViewController2.swift */; };
+		0971BA8129B1E3FC007A03CC /* TvGuideViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8029B1E3FC007A03CC /* TvGuideViewController2.storyboard */; };
+		0971BA8629B1E5E5007A03CC /* TvProgramScheduleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8529B1E5E5007A03CC /* TvProgramScheduleBuilder.swift */; };
+		0971BA8A29B1EEF3007A03CC /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8929B1EEF3007A03CC /* ProgramCollectionViewCell.swift */; };
+		0971BA8C29B1EFB5007A03CC /* ChannelReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */; };
+		0971BA8E29B1F005007A03CC /* ChannelReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */; };
+		0971BA9129B1F26D007A03CC /* TvGuideLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */; };
+		0971BA9929B256F3007A03CC /* TopLeftDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */; };
+		0971BA9B29B25725007A03CC /* TopLeftDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -114,6 +123,15 @@
 		0971BA7729B0F863007A03CC /* NSObject + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
 		0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelProgramCollection.swift; sourceTree = "<group>"; };
 		0971BA7B29B1096F007A03CC /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		0971BA7E29B1E3F1007A03CC /* TvGuideViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideViewController2.swift; sourceTree = "<group>"; };
+		0971BA8029B1E3FC007A03CC /* TvGuideViewController2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TvGuideViewController2.storyboard; sourceTree = "<group>"; };
+		0971BA8529B1E5E5007A03CC /* TvProgramScheduleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgramScheduleBuilder.swift; sourceTree = "<group>"; };
+		0971BA8929B1EEF3007A03CC /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
+		0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelReusableView.swift; sourceTree = "<group>"; };
+		0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelReusableView.xib; sourceTree = "<group>"; };
+		0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideLayout.swift; sourceTree = "<group>"; };
+		0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftDecorationView.swift; sourceTree = "<group>"; };
+		0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopLeftDecorationView.xib; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,7 +235,6 @@
 			children = (
 				0971B9EF29AF303B007A03CC /* UI.swift */,
 				0971B9E529AF2C77007A03CC /* TVGuide */,
-				0971BA5929B0AFD8007A03CC /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -225,8 +242,8 @@
 		0971B9E529AF2C77007A03CC /* TVGuide */ = {
 			isa = PBXGroup;
 			children = (
-				09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */,
-				09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */,
+				0971BA7D29B1E3CA007A03CC /* Option2 With Collection View */,
+				0971BA8229B1E52D007A03CC /* Option1 With Scroll View + Stack Views */,
 				0971BA0D29AF3DB3007A03CC /* Assembly */,
 				0971B9E929AF2D3B007A03CC /* View */,
 				0971B9E829AF2D39007A03CC /* Interactor */,
@@ -283,6 +300,7 @@
 		0971B9FE29AF3204007A03CC /* Logic */ = {
 			isa = PBXGroup;
 			children = (
+				0971BA9429B20699007A03CC /* Cache */,
 				0971BA0829AF3A9C007A03CC /* Application */,
 				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
 				0971BA3929AF9C89007A03CC /* CoreData */,
@@ -304,7 +322,6 @@
 			isa = PBXGroup;
 			children = (
 				0971BA0629AF34FF007A03CC /* App.swift */,
-				0971BA6E29B0E99E007A03CC /* Defaults.swift */,
 				0971BA1029AF445C007A03CC /* Navigation */,
 				0971BA0529AF34EE007A03CC /* DI */,
 			);
@@ -403,25 +420,6 @@
 			path = Managed;
 			sourceTree = "<group>";
 		};
-		0971BA5629B09F3A007A03CC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */,
-				0971BA7129B0EDCC007A03CC /* ChannelCollectionBuilder.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		0971BA5929B0AFD8007A03CC /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				0971BA5A29B0B001007A03CC /* XibView */,
-				0971BA5B29B0B031007A03CC /* ChannelView */,
-				0971BA6829B0E673007A03CC /* ProgrammView */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		0971BA5A29B0B001007A03CC /* XibView */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,14 +446,6 @@
 			path = ProgrammView;
 			sourceTree = "<group>";
 		};
-		0971BA7329B0F69B007A03CC /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */,
-			);
-			path = Objects;
-			sourceTree = "<group>";
-		};
 		0971BA7429B0F7FA007A03CC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +454,109 @@
 				0971BA7B29B1096F007A03CC /* UIView + Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0971BA7D29B1E3CA007A03CC /* Option2 With Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9329B20682007A03CC /* Helpers */,
+				0971BA8F29B1F25F007A03CC /* Layout */,
+				0971BA8329B1E5CD007A03CC /* Views */,
+				0971BA7E29B1E3F1007A03CC /* TvGuideViewController2.swift */,
+				0971BA8029B1E3FC007A03CC /* TvGuideViewController2.storyboard */,
+			);
+			path = "Option2 With Collection View";
+			sourceTree = "<group>";
+		};
+		0971BA8229B1E52D007A03CC /* Option1 With Scroll View + Stack Views */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9229B20664007A03CC /* Helpers */,
+				0971BA8729B1EDB4007A03CC /* Views */,
+				09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */,
+				09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */,
+			);
+			name = "Option1 With Scroll View + Stack Views";
+			sourceTree = "<group>";
+		};
+		0971BA8329B1E5CD007A03CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9729B256D3007A03CC /* TopLeftDecorationView */,
+				0971BA9629B256AE007A03CC /* ProgramCollectionViewCell */,
+				0971BA9529B2569D007A03CC /* ChannelsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0971BA8729B1EDB4007A03CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5A29B0B001007A03CC /* XibView */,
+				0971BA6829B0E673007A03CC /* ProgrammView */,
+				0971BA5B29B0B031007A03CC /* ChannelView */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		0971BA8F29B1F25F007A03CC /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		0971BA9229B20664007A03CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA6E29B0E99E007A03CC /* Defaults.swift */,
+				0971BA7129B0EDCC007A03CC /* ChannelCollectionBuilder.swift */,
+				0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		0971BA9329B20682007A03CC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA8529B1E5E5007A03CC /* TvProgramScheduleBuilder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0971BA9429B20699007A03CC /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		0971BA9529B2569D007A03CC /* ChannelsView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */,
+				0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */,
+			);
+			path = ChannelsView;
+			sourceTree = "<group>";
+		};
+		0971BA9629B256AE007A03CC /* ProgramCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA8929B1EEF3007A03CC /* ProgramCollectionViewCell.swift */,
+			);
+			path = ProgramCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0971BA9729B256D3007A03CC /* TopLeftDecorationView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */,
+				0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */,
+			);
+			path = TopLeftDecorationView;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -490,8 +583,6 @@
 				092BB68429AF297800679B39 /* MainDelegates */,
 				092BB68529AF298D00679B39 /* Protocols */,
 				0971BA7429B0F7FA007A03CC /* Extensions */,
-				0971BA5629B09F3A007A03CC /* Helpers */,
-				0971BA7329B0F69B007A03CC /* Objects */,
 				0971B9FE29AF3204007A03CC /* Logic */,
 				0971B9E429AF2C6E007A03CC /* UI */,
 				0971B9E229AF2C03007A03CC /* SupportingFIles */,
@@ -580,7 +671,10 @@
 			files = (
 				0971BA6729B0BC41007A03CC /* ChannelView.xib in Resources */,
 				0971BA6D29B0E7FE007A03CC /* ProgramView.xib in Resources */,
+				0971BA8E29B1F005007A03CC /* ChannelReusableView.xib in Resources */,
+				0971BA9B29B25725007A03CC /* TopLeftDecorationView.xib in Resources */,
 				09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */,
+				0971BA8129B1E3FC007A03CC /* TvGuideViewController2.storyboard in Resources */,
 				09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */,
 				09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */,
 			);
@@ -635,6 +729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0971BA9129B1F26D007A03CC /* TvGuideLayout.swift in Sources */,
 				0971BA1829AF83BC007A03CC /* TvProgramResponse.swift in Sources */,
 				0971BA1D29AF83E9007A03CC /* TvGuideEndpoint.swift in Sources */,
 				092BB68829AF29EC00679B39 /* Network.swift in Sources */,
@@ -666,18 +761,23 @@
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
 				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
 				0971BA4D29AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift in Sources */,
+				0971BA8C29B1EFB5007A03CC /* ChannelReusableView.swift in Sources */,
 				0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */,
 				0971BA4729AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift in Sources */,
 				0971BA4F29AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift in Sources */,
 				0971BA3C29AF9CA5007A03CC /* VMedia.xcdatamodeld in Sources */,
 				0971BA1329AF4492007A03CC /* Router.swift in Sources */,
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
+				0971BA9929B256F3007A03CC /* TopLeftDecorationView.swift in Sources */,
 				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
+				0971BA8629B1E5E5007A03CC /* TvProgramScheduleBuilder.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
 				0971BA5829B09F48007A03CC /* ChachedDataPolicy.swift in Sources */,
 				0971BA6429B0BBFB007A03CC /* ChannelView.swift in Sources */,
+				0971BA8A29B1EEF3007A03CC /* ProgramCollectionViewCell.swift in Sources */,
 				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,
 				0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */,
+				0971BA7F29B1E3F1007A03CC /* TvGuideViewController2.swift in Sources */,
 				0971BA4E29AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift in Sources */,
 				0971BA7629B0F850007A03CC /* String + Extension.swift in Sources */,
 				09C4D0C929ADDE8B008D6DD0 /* TvGuideViewController.swift in Sources */,

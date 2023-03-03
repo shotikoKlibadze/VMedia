@@ -16,6 +16,5 @@ class ProgramView: XibView {
         programNameLabel.text = program.name
         let relativeTimePercentage = program.length / Defaults.halfHour
         containerView.widthAnchor.constraint(equalToConstant: Defaults.timeTableWidth * CGFloat(relativeTimePercentage)).isActive = true
-//        containerView.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
 }

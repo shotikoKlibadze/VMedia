@@ -103,7 +103,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="channelsView" destination="Bq9-Yv-66f" id="5fe-bm-Q1L"/>
+                        <outlet property="channelsStackView" destination="AB7-Sa-BTQ" id="h2r-go-UUI"/>
                         <outlet property="tvProgramsStackView" destination="oUK-B4-Q7e" id="lfg-u0-qYo"/>
                     </connections>
                 </viewController>

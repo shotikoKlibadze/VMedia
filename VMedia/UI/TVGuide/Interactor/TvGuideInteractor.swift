@@ -15,7 +15,6 @@ extension UI.TvGuide {
         private let networkClinet: Network.Client
         private let localService: TvGuideLocalDataService
         private let currentDate = Date()
-        private let builder = ChannelCollectionBuilder()
         
         init(with localService: TvGuideLocalDataService) {
             self.networkClinet = Network.Client()
@@ -44,13 +43,12 @@ private extension UI.TvGuide.Interactor {
             case .success(.found(date: let date, programs: let programs)) where
                 CachedDataPolicy.validate(date, against: self.currentDate):
                 self.output?.didFetchTvProgramms(tvProgramms: programs)
-                self.builder.recieveTvPrograms(programs: programs)
-                print("got programs from local")
+                print("Got programs from local data source")
             case .failure(_), .success(.empty), .success(.found):
                 Task {
-                    self.getProgramsDataFromServer
+                    await self.getProgramsDataFromServer()
                 }
-                print("need to get programs from server")
+                print("Local Programs data expired. Need to get programs from server")
             }
         }
     }
@@ -62,37 +60,45 @@ private extension UI.TvGuide.Interactor {
             case .success(.found(date: let date, programs: let channels)) where
                 CachedDataPolicy.validate(date, against: self.currentDate):
                 self.output?.didFetchTvChannels(tvChannels: channels)
-                print("got channels from local")
+                print("Got channels from local data source")
             case .failure(_), .success(.empty), .success(.found):
                 Task {
-                    self.getChannelsDataFromServer
+                    await self.getChannelsDataFromServer()
                 }
-                print("need to get channels from server")
+                print("Local Chanels data expired. Need to get channels from server")
+            }
+        }
+    }
+    
+    func getChannelsDataFromServer() async {
+        Task {
+            let endpoint = TvGuideEndpoint<[TvChannelResponse]>.getTvChannels
+            let result = await networkClinet.makeRequest(with: endpoint)
+            switch result {
+            case .success(let channels):
+                let tvChannelEntities = channels.map({TvChannel(with: $0)})
+                output?.didFetchTvChannels(tvChannels: tvChannelEntities)
+                localService.deleteCachedData(completion: {_ in })
+                localService.cache(channels: tvChannelEntities, date: currentDate) { _ in }
+            case .failure(let error):
+                output?.errorFetchingTvChannels(error: error)
             }
         }
     }
     
     func getProgramsDataFromServer() async {
-        let endpoint = TvGuideEndpoint<[TvChannelResponse]>.getTvChannels
-        let result = await networkClinet.makeRequest(with: endpoint)
-        switch result {
-        case .success(let channels):
-            let tvChannelEntities = channels.map({TvChannel(with: $0)})
-            output?.didFetchTvChannels(tvChannels: tvChannelEntities)
-        case .failure(let error):
-            output?.errorFetchingTvChannels(error: error)
-        }
-    }
-    
-    func getChannelsDataFromServer() async {
-        let endpoint = TvGuideEndpoint<[TvProgramResponse]>.getTvProgramms
-        let result = await networkClinet.makeRequest(with: endpoint)
-        switch result {
-        case .success(let tvPrograms):
-            let tvProgramEntities = tvPrograms.map({TvProgram(with: $0)})
-            output?.didFetchTvProgramms(tvProgramms: tvProgramEntities)
-        case .failure(let error):
-            output?.errorFetchingTvProgramms(error: error)
+        Task {
+            let endpoint = TvGuideEndpoint<[TvProgramResponse]>.getTvProgramms
+            let result = await networkClinet.makeRequest(with: endpoint)
+            switch result {
+            case .success(let tvPrograms):
+                let tvProgramEntities = tvPrograms.map({TvProgram(with: $0)})
+                output?.didFetchTvProgramms(tvProgramms: tvProgramEntities)
+                localService.deleteCachedData(completion: {_ in })
+                localService.cache(programs: tvProgramEntities, date: currentDate) { _ in }
+            case .failure(let error):
+                output?.errorFetchingTvProgramms(error: error)
+            }
         }
     }
 }

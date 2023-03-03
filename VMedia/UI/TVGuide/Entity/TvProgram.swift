@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TvProgram {
+struct TvProgram: Hashable {
     
     let startTime: String
     let recentAirTime: RecentAirTime
@@ -15,6 +15,9 @@ struct TvProgram {
     let name: String
     var startDate: Date {
         return startTime.toDate()
+    }
+    var id: Int {
+        return recentAirTime.id
     }
     
     init(with response: TvProgramResponse) {
@@ -29,6 +32,17 @@ struct TvProgram {
         self.recentAirTime = recentAirTime
         self.length = length
         self.name = name
+    }
+}
+
+extension TvProgram {
+    
+    static func == (lhs: TvProgram, rhs: TvProgram) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
 

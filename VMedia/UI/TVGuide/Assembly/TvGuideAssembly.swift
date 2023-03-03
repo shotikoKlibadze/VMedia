@@ -12,8 +12,9 @@ extension UI.TvGuide {
     
     final class Assembly: Swinject.Assembly {
         
-        typealias View = TvGuideViewController
+       //typealias View = TvGuideViewController
         typealias Router = TvGuideRouter
+        typealias View = TvGuideViewController2
         
         func assemble(container: Swinject.Container) {
             container.register(Presenter.self) { (resolver, router: Router) in

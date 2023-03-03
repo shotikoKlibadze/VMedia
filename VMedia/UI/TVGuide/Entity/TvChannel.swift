@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TvChannel {
+struct TvChannel: Hashable {
     
     let orderNum: Int
     let accessNum: Int

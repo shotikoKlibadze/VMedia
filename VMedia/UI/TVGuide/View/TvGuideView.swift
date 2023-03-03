@@ -10,6 +10,14 @@ import Foundation
 protocol TvGuidView: Presentable {
     func channelViews(views: [ChannelView])
     func programCollection(collection: [ChannelProgramCollection])
+    func tvProgramSchedule(schedule: [TvSchedule])
+}
+
+//To easily switch between UI Options
+extension TvGuidView {
+    func channelViews(views: [ChannelView]) {}
+    func programCollection(collection: [ChannelProgramCollection]) {}
+    func tvProgramSchedule(schedule: [TvSchedule]) {}
 }
 
 protocol TvGuideViewOutput: AnyObject {
