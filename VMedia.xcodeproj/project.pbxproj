@@ -44,6 +44,17 @@
 		0971BA5029AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */; };
 		0971BA5529AFA0AE007A03CC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */; };
 		0971BA5829B09F48007A03CC /* ChachedDataPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */; };
+		0971BA5E29B0B0A1007A03CC /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA5D29B0B0A1007A03CC /* XibView.swift */; };
+		0971BA6429B0BBFB007A03CC /* ChannelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA6329B0BBFB007A03CC /* ChannelView.swift */; };
+		0971BA6729B0BC41007A03CC /* ChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA6629B0BC41007A03CC /* ChannelView.xib */; };
+		0971BA6B29B0E7D8007A03CC /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA6A29B0E7D8007A03CC /* ProgramView.swift */; };
+		0971BA6D29B0E7FE007A03CC /* ProgramView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA6C29B0E7FE007A03CC /* ProgramView.xib */; };
+		0971BA6F29B0E99E007A03CC /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA6E29B0E99E007A03CC /* Defaults.swift */; };
+		0971BA7229B0EDCC007A03CC /* ChannelCollectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7129B0EDCC007A03CC /* ChannelCollectionBuilder.swift */; };
+		0971BA7629B0F850007A03CC /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7529B0F850007A03CC /* String + Extension.swift */; };
+		0971BA7829B0F863007A03CC /* NSObject + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7729B0F863007A03CC /* NSObject + Extension.swift */; };
+		0971BA7A29B1033C007A03CC /* ChannelProgramCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */; };
+		0971BA7C29B1096F007A03CC /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA7B29B1096F007A03CC /* UIView + Extension.swift */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -92,6 +103,17 @@
 		0971BA4629AF9E15007A03CC /* ManagedChannel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ManagedChannel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0971BA5429AFA0AE007A03CC /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChachedDataPolicy.swift; sourceTree = "<group>"; };
+		0971BA5D29B0B0A1007A03CC /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		0971BA6329B0BBFB007A03CC /* ChannelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelView.swift; sourceTree = "<group>"; };
+		0971BA6629B0BC41007A03CC /* ChannelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelView.xib; sourceTree = "<group>"; };
+		0971BA6A29B0E7D8007A03CC /* ProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
+		0971BA6C29B0E7FE007A03CC /* ProgramView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramView.xib; sourceTree = "<group>"; };
+		0971BA6E29B0E99E007A03CC /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		0971BA7129B0EDCC007A03CC /* ChannelCollectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCollectionBuilder.swift; sourceTree = "<group>"; };
+		0971BA7529B0F850007A03CC /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		0971BA7729B0F863007A03CC /* NSObject + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Extension.swift"; sourceTree = "<group>"; };
+		0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelProgramCollection.swift; sourceTree = "<group>"; };
+		0971BA7B29B1096F007A03CC /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,8 +217,7 @@
 			children = (
 				0971B9EF29AF303B007A03CC /* UI.swift */,
 				0971B9E529AF2C77007A03CC /* TVGuide */,
-				09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */,
-				09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */,
+				0971BA5929B0AFD8007A03CC /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -204,6 +225,8 @@
 		0971B9E529AF2C77007A03CC /* TVGuide */ = {
 			isa = PBXGroup;
 			children = (
+				09C4D0C829ADDE8B008D6DD0 /* TvGuideViewController.swift */,
+				09C4D0CA29ADDE9C008D6DD0 /* TvGuideViewController.storyboard */,
 				0971BA0D29AF3DB3007A03CC /* Assembly */,
 				0971B9E929AF2D3B007A03CC /* View */,
 				0971B9E829AF2D39007A03CC /* Interactor */,
@@ -260,10 +283,9 @@
 		0971B9FE29AF3204007A03CC /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA5629B09F3A007A03CC /* Helpers */,
-				0971BA3929AF9C89007A03CC /* CoreData */,
-				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
 				0971BA0829AF3A9C007A03CC /* Application */,
+				0971BA0929AF3AB0007A03CC /* LocalDataServices */,
+				0971BA3929AF9C89007A03CC /* CoreData */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -282,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				0971BA0629AF34FF007A03CC /* App.swift */,
+				0971BA6E29B0E99E007A03CC /* Defaults.swift */,
 				0971BA1029AF445C007A03CC /* Navigation */,
 				0971BA0529AF34EE007A03CC /* DI */,
 			);
@@ -384,8 +407,63 @@
 			isa = PBXGroup;
 			children = (
 				0971BA5729B09F48007A03CC /* ChachedDataPolicy.swift */,
+				0971BA7129B0EDCC007A03CC /* ChannelCollectionBuilder.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0971BA5929B0AFD8007A03CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5A29B0B001007A03CC /* XibView */,
+				0971BA5B29B0B031007A03CC /* ChannelView */,
+				0971BA6829B0E673007A03CC /* ProgrammView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		0971BA5A29B0B001007A03CC /* XibView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA5D29B0B0A1007A03CC /* XibView.swift */,
+			);
+			path = XibView;
+			sourceTree = "<group>";
+		};
+		0971BA5B29B0B031007A03CC /* ChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA6329B0BBFB007A03CC /* ChannelView.swift */,
+				0971BA6629B0BC41007A03CC /* ChannelView.xib */,
+			);
+			path = ChannelView;
+			sourceTree = "<group>";
+		};
+		0971BA6829B0E673007A03CC /* ProgrammView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA6A29B0E7D8007A03CC /* ProgramView.swift */,
+				0971BA6C29B0E7FE007A03CC /* ProgramView.xib */,
+			);
+			path = ProgrammView;
+			sourceTree = "<group>";
+		};
+		0971BA7329B0F69B007A03CC /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA7929B1033C007A03CC /* ChannelProgramCollection.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		0971BA7429B0F7FA007A03CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA7529B0F850007A03CC /* String + Extension.swift */,
+				0971BA7729B0F863007A03CC /* NSObject + Extension.swift */,
+				0971BA7B29B1096F007A03CC /* UIView + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -411,6 +489,9 @@
 			children = (
 				092BB68429AF297800679B39 /* MainDelegates */,
 				092BB68529AF298D00679B39 /* Protocols */,
+				0971BA7429B0F7FA007A03CC /* Extensions */,
+				0971BA5629B09F3A007A03CC /* Helpers */,
+				0971BA7329B0F69B007A03CC /* Objects */,
 				0971B9FE29AF3204007A03CC /* Logic */,
 				0971B9E429AF2C6E007A03CC /* UI */,
 				0971B9E229AF2C03007A03CC /* SupportingFIles */,
@@ -497,6 +578,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0971BA6729B0BC41007A03CC /* ChannelView.xib in Resources */,
+				0971BA6D29B0E7FE007A03CC /* ProgramView.xib in Resources */,
 				09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */,
 				09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */,
 				09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */,
@@ -555,7 +638,9 @@
 				0971BA1829AF83BC007A03CC /* TvProgramResponse.swift in Sources */,
 				0971BA1D29AF83E9007A03CC /* TvGuideEndpoint.swift in Sources */,
 				092BB68829AF29EC00679B39 /* Network.swift in Sources */,
+				0971BA6B29B0E7D8007A03CC /* ProgramView.swift in Sources */,
 				0971B9DD29AF2A69007A03CC /* VMError.swift in Sources */,
+				0971BA7829B0F863007A03CC /* NSObject + Extension.swift in Sources */,
 				0971BA1A29AF83CA007A03CC /* TvChannelResponse.swift in Sources */,
 				0971B9E129AF2AB4007A03CC /* Endpoint.swift in Sources */,
 				0971BA0029AF334A007A03CC /* Resolver.swift in Sources */,
@@ -568,12 +653,16 @@
 				0971BA4B29AF9E15007A03CC /* ChannelsCache+CoreDataClass.swift in Sources */,
 				0971BA0429AF3382007A03CC /* RouterAssembly.swift in Sources */,
 				0971BA5529AFA0AE007A03CC /* CoreDataStack.swift in Sources */,
+				0971BA7C29B1096F007A03CC /* UIView + Extension.swift in Sources */,
+				0971BA7A29B1033C007A03CC /* ChannelProgramCollection.swift in Sources */,
 				09C4D0CD29ADDECB008D6DD0 /* StoryboardLoadable.swift in Sources */,
 				0971B9EE29AF302D007A03CC /* TvGuideInteractor.swift in Sources */,
 				0971BA4829AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift in Sources */,
 				09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */,
 				0971BA4C29AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift in Sources */,
+				0971BA7229B0EDCC007A03CC /* ChannelCollectionBuilder.swift in Sources */,
 				0971BA0729AF34FF007A03CC /* App.swift in Sources */,
+				0971BA5E29B0B0A1007A03CC /* XibView.swift in Sources */,
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
 				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
 				0971BA4D29AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift in Sources */,
@@ -586,13 +675,16 @@
 				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
 				0971BA5829B09F48007A03CC /* ChachedDataPolicy.swift in Sources */,
+				0971BA6429B0BBFB007A03CC /* ChannelView.swift in Sources */,
 				0971BA0229AF3357007A03CC /* InteractorAssembly.swift in Sources */,
 				0971B9F529AF3100007A03CC /* TvGuidePresenter.swift in Sources */,
 				0971BA4E29AF9E15007A03CC /* ManagedProgram+CoreDataProperties.swift in Sources */,
+				0971BA7629B0F850007A03CC /* String + Extension.swift in Sources */,
 				09C4D0C929ADDE8B008D6DD0 /* TvGuideViewController.swift in Sources */,
 				0971BA4929AF9E15007A03CC /* ProgramsCache+CoreDataClass.swift in Sources */,
 				0971BA0F29AF3DCF007A03CC /* TvGuideAssembly.swift in Sources */,
 				092BB68A29AF29F600679B39 /* NetworkClient.swift in Sources */,
+				0971BA6F29B0E99E007A03CC /* Defaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +831,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -767,6 +860,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,6 +15,7 @@ extension UI.TvGuide {
         private let networkClinet: Network.Client
         private let localService: TvGuideLocalDataService
         private let currentDate = Date()
+        private let builder = ChannelCollectionBuilder()
         
         init(with localService: TvGuideLocalDataService) {
             self.networkClinet = Network.Client()
@@ -43,6 +44,7 @@ private extension UI.TvGuide.Interactor {
             case .success(.found(date: let date, programs: let programs)) where
                 CachedDataPolicy.validate(date, against: self.currentDate):
                 self.output?.didFetchTvProgramms(tvProgramms: programs)
+                self.builder.recieveTvPrograms(programs: programs)
                 print("got programs from local")
             case .failure(_), .success(.empty), .success(.found):
                 Task {

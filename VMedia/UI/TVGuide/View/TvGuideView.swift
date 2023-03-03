@@ -8,7 +8,8 @@
 import Foundation
 
 protocol TvGuidView: Presentable {
-
+    func channelViews(views: [ChannelView])
+    func programCollection(collection: [ChannelProgramCollection])
 }
 
 protocol TvGuideViewOutput: AnyObject {

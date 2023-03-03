@@ -25,39 +25,66 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bq9-Yv-66f">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="800"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AB7-Sa-BTQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="800"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AB7-Sa-BTQ">
+                                                        <rect key="frame" x="5" y="0.0" width="115" height="800"/>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" secondItem="AB7-Sa-BTQ" secondAttribute="bottom" id="8VA-xZ-cFV"/>
                                                     <constraint firstAttribute="trailing" secondItem="AB7-Sa-BTQ" secondAttribute="trailing" id="BTM-i2-6lh"/>
-                                                    <constraint firstItem="AB7-Sa-BTQ" firstAttribute="leading" secondItem="Bq9-Yv-66f" secondAttribute="leading" id="O62-Rd-mF6"/>
-                                                    <constraint firstAttribute="width" constant="120" id="YXj-bX-NLB"/>
+                                                    <constraint firstItem="AB7-Sa-BTQ" firstAttribute="leading" secondItem="Bq9-Yv-66f" secondAttribute="leading" constant="5" id="O62-Rd-mF6"/>
+                                                    <constraint firstAttribute="width" priority="250" constant="120" id="YXj-bX-NLB"/>
                                                     <constraint firstItem="AB7-Sa-BTQ" firstAttribute="top" secondItem="Bq9-Yv-66f" secondAttribute="top" id="u3m-Bd-TyK"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HpH-WQ-iHs">
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cr7-re-rQX">
                                                 <rect key="frame" x="120" y="0.0" width="273" height="800"/>
-                                            </stackView>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgO-Pr-nnc" userLabel="SecondContentView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="800"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-B4-Q7e">
+                                                                <rect key="frame" x="0.0" y="0.0" width="280" height="800"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" priority="250" constant="280" id="1XK-H4-hJ4"/>
+                                                            <constraint firstAttribute="trailing" secondItem="oUK-B4-Q7e" secondAttribute="trailing" id="Ggz-BS-X8z"/>
+                                                            <constraint firstItem="oUK-B4-Q7e" firstAttribute="top" secondItem="KgO-Pr-nnc" secondAttribute="top" id="GtL-DC-MxN"/>
+                                                            <constraint firstAttribute="bottom" secondItem="oUK-B4-Q7e" secondAttribute="bottom" id="tRX-KA-utH"/>
+                                                            <constraint firstItem="oUK-B4-Q7e" firstAttribute="leading" secondItem="KgO-Pr-nnc" secondAttribute="leading" id="xeB-jo-4vO"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="KgO-Pr-nnc" firstAttribute="trailing" secondItem="p8e-Wv-ozA" secondAttribute="trailing" priority="250" id="Jd3-UM-Bga"/>
+                                                    <constraint firstItem="KgO-Pr-nnc" firstAttribute="top" secondItem="p8e-Wv-ozA" secondAttribute="top" id="jTk-Kr-sMD"/>
+                                                    <constraint firstItem="KgO-Pr-nnc" firstAttribute="bottom" secondItem="p8e-Wv-ozA" secondAttribute="bottom" id="u52-BJ-SHl"/>
+                                                    <constraint firstItem="KgO-Pr-nnc" firstAttribute="leading" secondItem="p8e-Wv-ozA" secondAttribute="leading" priority="250" id="wzG-L9-wcn"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="p8e-Wv-ozA"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="dFY-vw-q6x"/>
+                                            </scrollView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="HpH-WQ-iHs" secondAttribute="trailing" id="1S0-70-eqt"/>
                                             <constraint firstItem="Bq9-Yv-66f" firstAttribute="top" secondItem="Cgi-XC-38f" secondAttribute="top" id="3FP-sX-oGM"/>
-                                            <constraint firstItem="HpH-WQ-iHs" firstAttribute="top" secondItem="Cgi-XC-38f" secondAttribute="top" id="9T1-wl-Noo"/>
-                                            <constraint firstAttribute="bottom" secondItem="HpH-WQ-iHs" secondAttribute="bottom" id="M2A-zX-Vze"/>
+                                            <constraint firstItem="KgO-Pr-nnc" firstAttribute="height" secondItem="Cgi-XC-38f" secondAttribute="height" id="NzV-KM-efQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="cr7-re-rQX" secondAttribute="trailing" priority="250" id="SzX-Y5-biM"/>
+                                            <constraint firstItem="cr7-re-rQX" firstAttribute="top" secondItem="Cgi-XC-38f" secondAttribute="top" id="Vay-Hq-a6n"/>
+                                            <constraint firstItem="cr7-re-rQX" firstAttribute="leading" secondItem="Bq9-Yv-66f" secondAttribute="trailing" priority="250" id="Zei-dd-XK3"/>
                                             <constraint firstAttribute="bottom" secondItem="Bq9-Yv-66f" secondAttribute="bottom" id="eGN-Re-Kfw"/>
-                                            <constraint firstItem="HpH-WQ-iHs" firstAttribute="leading" secondItem="Bq9-Yv-66f" secondAttribute="trailing" id="gcf-DG-k1H"/>
                                             <constraint firstAttribute="height" priority="250" constant="800" id="uSq-cC-vYd"/>
-                                            <constraint firstAttribute="width" priority="250" constant="393" id="xim-H4-hVv"/>
                                             <constraint firstItem="Bq9-Yv-66f" firstAttribute="leading" secondItem="Cgi-XC-38f" secondAttribute="leading" id="ya5-4t-xho"/>
+                                            <constraint firstAttribute="bottom" secondItem="cr7-re-rQX" secondAttribute="bottom" id="zyl-Z0-7Hz"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Cgi-XC-38f" firstAttribute="top" secondItem="eYu-is-Jx6" secondAttribute="top" id="5bG-VC-nFJ"/>
+                                    <constraint firstItem="Cgi-XC-38f" firstAttribute="width" secondItem="T9q-R9-JWm" secondAttribute="width" id="Cir-Ca-LfC"/>
                                     <constraint firstItem="Cgi-XC-38f" firstAttribute="leading" secondItem="eYu-is-Jx6" secondAttribute="leading" id="aXK-e9-Gtb"/>
                                     <constraint firstItem="Cgi-XC-38f" firstAttribute="bottom" secondItem="eYu-is-Jx6" secondAttribute="bottom" id="xcm-4z-qBg"/>
                                     <constraint firstItem="Cgi-XC-38f" firstAttribute="trailing" secondItem="eYu-is-Jx6" secondAttribute="trailing" id="yk4-7r-KUS"/>
@@ -76,10 +103,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="channelsStackView" destination="AB7-Sa-BTQ" id="byl-Xc-hG3"/>
                         <outlet property="channelsView" destination="Bq9-Yv-66f" id="5fe-bm-Q1L"/>
-                        <outlet property="programsStackView" destination="HpH-WQ-iHs" id="RkQ-RC-Der"/>
-                        <outlet property="scrollView" destination="Bb4-oY-g1c" id="CSj-0G-abo"/>
+                        <outlet property="tvProgramsStackView" destination="oUK-B4-Q7e" id="lfg-u0-qYo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -90,9 +115,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

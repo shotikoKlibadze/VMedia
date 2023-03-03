@@ -13,6 +13,9 @@ struct TvProgram {
     let recentAirTime: RecentAirTime
     let length: Int
     let name: String
+    var startDate: Date {
+        return startTime.toDate()
+    }
     
     init(with response: TvProgramResponse) {
         self.startTime = response.startTime
@@ -43,5 +46,4 @@ struct RecentAirTime: Codable {
         self.id = id
         self.channelID = channelID
     }
-    
 }

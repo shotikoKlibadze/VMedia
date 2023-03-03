@@ -22,9 +22,3 @@ extension StoryboardLoadable where Self: UIViewController {
         return controller
     }
 }
-
-extension NSObject {
-    static func getClassName() -> String {
-        return NSStringFromClass(self).components(separatedBy: ".").last!
-    }
-}
