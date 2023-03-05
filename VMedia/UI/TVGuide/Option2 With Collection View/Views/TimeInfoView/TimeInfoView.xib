@@ -10,12 +10,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GuideDateInformationView" customModule="VMedia" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimeInfoView" customModule="VMedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osc-Ak-fgt">
-                    <rect key="frame" x="5" y="8.6666666666666643" width="383" height="48"/>
+                    <rect key="frame" x="10" y="8.6666666666666643" width="373" height="48"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIP-Rx-LQN">
                             <rect key="frame" x="0.0" y="13.333333333333336" width="42" height="21"/>
@@ -35,8 +35,8 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="Osc-Ak-fgt" secondAttribute="trailing" constant="5" id="EfR-5L-leW"/>
-                <constraint firstItem="Osc-Ak-fgt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="V5m-b9-tLv"/>
+                <constraint firstAttribute="trailing" secondItem="Osc-Ak-fgt" secondAttribute="trailing" constant="10" id="EfR-5L-leW"/>
+                <constraint firstItem="Osc-Ak-fgt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="V5m-b9-tLv"/>
                 <constraint firstItem="Osc-Ak-fgt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y9N-xH-tX1"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

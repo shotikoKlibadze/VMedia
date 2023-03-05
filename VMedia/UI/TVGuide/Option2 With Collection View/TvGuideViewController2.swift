@@ -15,8 +15,8 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
     
     private let channelsViewNibName = "ChannelInfoView"
     private let channelViewIdentifier = "ChannelInfoViewIdentifier"
-    private let guideDateInformationViewNibName = "GuideDateInformationView"
-    private let guideDateInformationViewIdentifier = "GuideDateInformationViewIdentifier"
+    private let timeInfoViewNibName = "TimeInfoView"
+    private let imeInfoViewIdentifier = "GuideDateInformationViewIdentifier"
     private let defaultCellIdentifier = "DefaultCellIdentifier"
    
     private var dataSource: UICollectionViewDiffableDataSource<Int,TvProgram>!
@@ -42,8 +42,8 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
         
         //Register Supplementary-View
         self.colectionView.register(UINib(nibName: channelsViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.channelInformation.rawValue, withReuseIdentifier: self.channelViewIdentifier)
-        
-        self.colectionView.register(UINib(nibName: guideDateInformationViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.guideInformation.rawValue, withReuseIdentifier: self.guideDateInformationViewIdentifier)
+    
+        self.colectionView.register(UINib(nibName: timeInfoViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.timeInformation.rawValue, withReuseIdentifier: self.imeInfoViewIdentifier)
         
         //DataSource
         dataSource = UICollectionViewDiffableDataSource(collectionView: colectionView, cellProvider: { collectionView, indexPath, model in
@@ -63,9 +63,9 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
                 ChannelInfoView
                 channelInfoView.configure(with: self.schedule[indexPath.section].tvChannel)
                 return channelInfoView
-            case .guideInformation:
-                let decorationView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.guideDateInformationViewIdentifier, for: indexPath) as!
-                GuideDateInformationView
+            case .timeInformation:
+                let decorationView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.imeInfoViewIdentifier, for: indexPath) as!
+                TimeInfoView
                 decorationView.configure(with: "Date")
                 return decorationView
             }

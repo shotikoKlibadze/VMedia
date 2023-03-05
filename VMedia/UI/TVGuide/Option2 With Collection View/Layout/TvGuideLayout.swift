@@ -18,14 +18,16 @@ final class SpreadsheetLayout: UICollectionViewLayout {
     
     public weak var delegate: SpreadsheetLayoutDelegate?
     var stickyChannelsHeader = true
+    var stickyTopHeader = true
     
     enum ViewKindType: String {
         case channelInformation = "ChannelInformationView"
-        case guideInformation = "GuideInformation"
+        case timeInformation = "TimeInformation"
     }
     
     lazy var channelRowCache = [UICollectionViewLayoutAttributes]()
     lazy var cellCache = [[UICollectionViewLayoutAttributes]]()
+    lazy var topColumnCache = [UICollectionViewLayoutAttributes]()
     
     private var topLeftGapSpaceLayoutAttributes: UICollectionViewLayoutAttributes?
     private var contentHeight: CGFloat = 0
@@ -67,14 +69,18 @@ final class SpreadsheetLayout: UICollectionViewLayout {
             currentRowYoffset += rowHeight
         }
         
-        //Calculate programs Row width for sections
+        //Calculate programs Row width and time information view
         var columnWidths = [CGFloat]()
+        var currentColumnHeadlineXoffset = widthTuple.left ?? 0
         for item in 0 ..< maxItems {
             let topColumnWidth = delegate.spreadsheet(layout: self, widthForColumnAtIndex: item)
             columnWidths.append(topColumnWidth)
-            
-            
-            
+            if maxTopColumnHeight > 0 {
+                let topColumnAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ViewKindType.timeInformation.rawValue, with: IndexPath(item: item, section: 0))
+                topColumnAttributes.frame = CGRect(x: currentColumnHeadlineXoffset, y: 0, width: topColumnWidth, height: maxTopColumnHeight)
+                self.topColumnCache.append(topColumnAttributes)
+                currentColumnHeadlineXoffset += topColumnWidth
+            }
         }
         
         //Cell Data Setup
@@ -97,17 +103,17 @@ final class SpreadsheetLayout: UICollectionViewLayout {
         
         
         
-        //Top Left Decoration View
-        let numberOfSections = collectionView.numberOfSections
-        if numberOfSections > 0 {
-            if let leftRowWidth = widthTuple.left {
-                if maxTopColumnHeight > 0 {
-                    let topLeftAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ViewKindType.guideInformation.rawValue, with: IndexPath(item: 0, section: 0))
-                    topLeftAttributes.frame = CGRect(x: 0, y: 0, width: leftRowWidth, height: maxTopColumnHeight)
-                    self.topLeftGapSpaceLayoutAttributes = topLeftAttributes
-                }
-            }
-        }
+//        //Top Left Decoration View
+//        let numberOfSections = collectionView.numberOfSections
+//        if numberOfSections > 0 {
+//            if let leftRowWidth = widthTuple.left {
+//                if maxTopColumnHeight > 0 {
+//                    let topLeftAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ViewKindType.guideInformation.rawValue, with: IndexPath(item: 0, section: 0))
+//                    topLeftAttributes.frame = CGRect(x: 0, y: 0, width: leftRowWidth, height: maxTopColumnHeight)
+//                    self.topLeftGapSpaceLayoutAttributes = topLeftAttributes
+//                }
+//            }
+//        }
         
         if self.contentWidth != currentCellXoffset {
             collectionView.setContentOffset(CGPoint.zero, animated: false)
@@ -153,6 +159,22 @@ final class SpreadsheetLayout: UICollectionViewLayout {
             }
         }
         
+        //TOP COLUMN
+        if self.stickyTopHeader && cv.contentOffset.y >= 0 {
+            for columnAttributes in self.topColumnCache {
+                columnAttributes.frame.origin.y = cv.contentOffset.y
+                columnAttributes.zIndex = 2000
+                layoutAttributes.append(columnAttributes)
+            }
+        }
+        else {
+            for columnAttributes in self.topColumnCache where columnAttributes.frame.intersects(rect) {
+                columnAttributes.frame.origin.y = 0
+                columnAttributes.zIndex = 2000
+                layoutAttributes.append(columnAttributes)
+            }
+        }
+        
         //Top Left Gap Space
         if let topLeftGapSpaceAttributes = self.topLeftGapSpaceLayoutAttributes {
             if self.stickyChannelsHeader && cv.contentOffset.x >= 0 {
@@ -177,8 +199,8 @@ final class SpreadsheetLayout: UICollectionViewLayout {
         switch viewKind {
         case .channelInformation:
             return self.channelRowCache[indexPath.section]
-        case .guideInformation:
-            return self.topLeftGapSpaceLayoutAttributes
+        case .timeInformation:
+            return self.topColumnCache[indexPath.section]
         }
     }
     
@@ -186,6 +208,7 @@ final class SpreadsheetLayout: UICollectionViewLayout {
         super.invalidateLayout()
         channelRowCache.removeAll()
         cellCache.removeAll()
+        topColumnCache.removeAll()
     }
     
     override public func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {

@@ -62,8 +62,10 @@
 		0971BA8C29B1EFB5007A03CC /* ChannelInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */; };
 		0971BA8E29B1F005007A03CC /* ChannelInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */; };
 		0971BA9129B1F26D007A03CC /* TvGuideLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */; };
-		0971BA9929B256F3007A03CC /* GuideDateInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */; };
-		0971BA9B29B25725007A03CC /* GuideDateInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */; };
+		0971BA9929B256F3007A03CC /* TimeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9829B256F3007A03CC /* TimeInfoView.swift */; };
+		0971BA9B29B25725007A03CC /* TimeInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA9A29B25725007A03CC /* TimeInfoView.xib */; };
+		0971BA9F29B4E1E3007A03CC /* DateInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9E29B4E1E3007A03CC /* DateInfoView.swift */; };
+		0971BAA129B4E1F5007A03CC /* DateInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BAA029B4E1F5007A03CC /* DateInfoView.xib */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -130,8 +132,10 @@
 		0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoView.swift; sourceTree = "<group>"; };
 		0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelInfoView.xib; sourceTree = "<group>"; };
 		0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideLayout.swift; sourceTree = "<group>"; };
-		0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDateInformationView.swift; sourceTree = "<group>"; };
-		0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideDateInformationView.xib; sourceTree = "<group>"; };
+		0971BA9829B256F3007A03CC /* TimeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInfoView.swift; sourceTree = "<group>"; };
+		0971BA9A29B25725007A03CC /* TimeInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeInfoView.xib; sourceTree = "<group>"; };
+		0971BA9E29B4E1E3007A03CC /* DateInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInfoView.swift; sourceTree = "<group>"; };
+		0971BAA029B4E1F5007A03CC /* DateInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateInfoView.xib; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -482,9 +486,10 @@
 		0971BA8329B1E5CD007A03CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA9729B256D3007A03CC /* TopLeftDecorationView */,
+				0971BA9C29B4E1BF007A03CC /* DateInfoView */,
 				0971BA9629B256AE007A03CC /* ProgramCollectionViewCell */,
-				0971BA9529B2569D007A03CC /* ChannelsView */,
+				0971BA9729B256D3007A03CC /* TimeInfoView */,
+				0971BA9529B2569D007A03CC /* ChannelsInfoView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -533,13 +538,13 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
-		0971BA9529B2569D007A03CC /* ChannelsView */ = {
+		0971BA9529B2569D007A03CC /* ChannelsInfoView */ = {
 			isa = PBXGroup;
 			children = (
 				0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */,
 				0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */,
 			);
-			path = ChannelsView;
+			path = ChannelsInfoView;
 			sourceTree = "<group>";
 		};
 		0971BA9629B256AE007A03CC /* ProgramCollectionViewCell */ = {
@@ -550,13 +555,22 @@
 			path = ProgramCollectionViewCell;
 			sourceTree = "<group>";
 		};
-		0971BA9729B256D3007A03CC /* TopLeftDecorationView */ = {
+		0971BA9729B256D3007A03CC /* TimeInfoView */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */,
-				0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */,
+				0971BA9829B256F3007A03CC /* TimeInfoView.swift */,
+				0971BA9A29B25725007A03CC /* TimeInfoView.xib */,
 			);
-			path = TopLeftDecorationView;
+			path = TimeInfoView;
+			sourceTree = "<group>";
+		};
+		0971BA9C29B4E1BF007A03CC /* DateInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				0971BA9E29B4E1E3007A03CC /* DateInfoView.swift */,
+				0971BAA029B4E1F5007A03CC /* DateInfoView.xib */,
+			);
+			path = DateInfoView;
 			sourceTree = "<group>";
 		};
 		09C4D0A829ADDE24008D6DD0 = {
@@ -672,8 +686,9 @@
 				0971BA6729B0BC41007A03CC /* ChannelView.xib in Resources */,
 				0971BA6D29B0E7FE007A03CC /* ProgramView.xib in Resources */,
 				0971BA8E29B1F005007A03CC /* ChannelInfoView.xib in Resources */,
-				0971BA9B29B25725007A03CC /* GuideDateInformationView.xib in Resources */,
+				0971BA9B29B25725007A03CC /* TimeInfoView.xib in Resources */,
 				09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */,
+				0971BAA129B4E1F5007A03CC /* DateInfoView.xib in Resources */,
 				0971BA8129B1E3FC007A03CC /* TvGuideViewController2.storyboard in Resources */,
 				09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */,
 				09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */,
@@ -755,6 +770,7 @@
 				0971BA4829AF9E15007A03CC /* ManagedProgramAriTime+CoreDataProperties.swift in Sources */,
 				09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */,
 				0971BA4C29AF9E15007A03CC /* ChannelsCache+CoreDataProperties.swift in Sources */,
+				0971BA9F29B4E1E3007A03CC /* DateInfoView.swift in Sources */,
 				0971BA7229B0EDCC007A03CC /* ChannelCollectionBuilder.swift in Sources */,
 				0971BA0729AF34FF007A03CC /* App.swift in Sources */,
 				0971BA5E29B0B0A1007A03CC /* XibView.swift in Sources */,
@@ -768,7 +784,7 @@
 				0971BA3C29AF9CA5007A03CC /* VMedia.xcdatamodeld in Sources */,
 				0971BA1329AF4492007A03CC /* Router.swift in Sources */,
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
-				0971BA9929B256F3007A03CC /* GuideDateInformationView.swift in Sources */,
+				0971BA9929B256F3007A03CC /* TimeInfoView.swift in Sources */,
 				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
 				0971BA8629B1E5E5007A03CC /* TvProgramScheduleBuilder.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,
