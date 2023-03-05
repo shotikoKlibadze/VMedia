@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ChannelReusableView: UICollectionReusableView {
+final class ChannelInfoView: UICollectionReusableView {
     
     @IBOutlet weak var channelNumberLabel: UILabel!
     @IBOutlet private weak var channelLabel: UILabel!

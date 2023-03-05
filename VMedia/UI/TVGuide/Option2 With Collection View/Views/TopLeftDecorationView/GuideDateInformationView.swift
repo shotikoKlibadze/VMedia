@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class TopLeftDecorationView: UICollectionReusableView {
+final class GuideDateInformationView: UICollectionReusableView {
     
     @IBOutlet private weak var infoLabel: UILabel!
     

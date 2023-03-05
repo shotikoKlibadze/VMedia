@@ -59,11 +59,11 @@
 		0971BA8129B1E3FC007A03CC /* TvGuideViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8029B1E3FC007A03CC /* TvGuideViewController2.storyboard */; };
 		0971BA8629B1E5E5007A03CC /* TvProgramScheduleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8529B1E5E5007A03CC /* TvProgramScheduleBuilder.swift */; };
 		0971BA8A29B1EEF3007A03CC /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8929B1EEF3007A03CC /* ProgramCollectionViewCell.swift */; };
-		0971BA8C29B1EFB5007A03CC /* ChannelReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */; };
-		0971BA8E29B1F005007A03CC /* ChannelReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */; };
+		0971BA8C29B1EFB5007A03CC /* ChannelInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */; };
+		0971BA8E29B1F005007A03CC /* ChannelInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */; };
 		0971BA9129B1F26D007A03CC /* TvGuideLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */; };
-		0971BA9929B256F3007A03CC /* TopLeftDecorationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */; };
-		0971BA9B29B25725007A03CC /* TopLeftDecorationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */; };
+		0971BA9929B256F3007A03CC /* GuideDateInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */; };
+		0971BA9B29B25725007A03CC /* GuideDateInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */; };
 		09C4D0B529ADDE24008D6DD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */; };
 		09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */; };
 		09C4D0BE29ADDE26008D6DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C4D0BD29ADDE26008D6DD0 /* Assets.xcassets */; };
@@ -127,11 +127,11 @@
 		0971BA8029B1E3FC007A03CC /* TvGuideViewController2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TvGuideViewController2.storyboard; sourceTree = "<group>"; };
 		0971BA8529B1E5E5007A03CC /* TvProgramScheduleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvProgramScheduleBuilder.swift; sourceTree = "<group>"; };
 		0971BA8929B1EEF3007A03CC /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
-		0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelReusableView.swift; sourceTree = "<group>"; };
-		0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelReusableView.xib; sourceTree = "<group>"; };
+		0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelInfoView.swift; sourceTree = "<group>"; };
+		0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelInfoView.xib; sourceTree = "<group>"; };
 		0971BA9029B1F26D007A03CC /* TvGuideLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvGuideLayout.swift; sourceTree = "<group>"; };
-		0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftDecorationView.swift; sourceTree = "<group>"; };
-		0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopLeftDecorationView.xib; sourceTree = "<group>"; };
+		0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDateInformationView.swift; sourceTree = "<group>"; };
+		0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideDateInformationView.xib; sourceTree = "<group>"; };
 		09C4D0B129ADDE24008D6DD0 /* VMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09C4D0B429ADDE24008D6DD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09C4D0B629ADDE24008D6DD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -536,8 +536,8 @@
 		0971BA9529B2569D007A03CC /* ChannelsView */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA8B29B1EFB5007A03CC /* ChannelReusableView.swift */,
-				0971BA8D29B1F005007A03CC /* ChannelReusableView.xib */,
+				0971BA8B29B1EFB5007A03CC /* ChannelInfoView.swift */,
+				0971BA8D29B1F005007A03CC /* ChannelInfoView.xib */,
 			);
 			path = ChannelsView;
 			sourceTree = "<group>";
@@ -553,8 +553,8 @@
 		0971BA9729B256D3007A03CC /* TopLeftDecorationView */ = {
 			isa = PBXGroup;
 			children = (
-				0971BA9829B256F3007A03CC /* TopLeftDecorationView.swift */,
-				0971BA9A29B25725007A03CC /* TopLeftDecorationView.xib */,
+				0971BA9829B256F3007A03CC /* GuideDateInformationView.swift */,
+				0971BA9A29B25725007A03CC /* GuideDateInformationView.xib */,
 			);
 			path = TopLeftDecorationView;
 			sourceTree = "<group>";
@@ -671,8 +671,8 @@
 			files = (
 				0971BA6729B0BC41007A03CC /* ChannelView.xib in Resources */,
 				0971BA6D29B0E7FE007A03CC /* ProgramView.xib in Resources */,
-				0971BA8E29B1F005007A03CC /* ChannelReusableView.xib in Resources */,
-				0971BA9B29B25725007A03CC /* TopLeftDecorationView.xib in Resources */,
+				0971BA8E29B1F005007A03CC /* ChannelInfoView.xib in Resources */,
+				0971BA9B29B25725007A03CC /* GuideDateInformationView.xib in Resources */,
 				09C4D0CB29ADDE9C008D6DD0 /* TvGuideViewController.storyboard in Resources */,
 				0971BA8129B1E3FC007A03CC /* TvGuideViewController2.storyboard in Resources */,
 				09C4D0C129ADDE26008D6DD0 /* LaunchScreen.storyboard in Resources */,
@@ -761,14 +761,14 @@
 				09C4D0B729ADDE24008D6DD0 /* SceneDelegate.swift in Sources */,
 				0971B9F029AF303B007A03CC /* UI.swift in Sources */,
 				0971BA4D29AF9E15007A03CC /* ManagedProgram+CoreDataClass.swift in Sources */,
-				0971BA8C29B1EFB5007A03CC /* ChannelReusableView.swift in Sources */,
+				0971BA8C29B1EFB5007A03CC /* ChannelInfoView.swift in Sources */,
 				0971B9FD29AF3198007A03CC /* TvGuideRouter.swift in Sources */,
 				0971BA4729AF9E15007A03CC /* ManagedProgramAriTime+CoreDataClass.swift in Sources */,
 				0971BA4F29AF9E15007A03CC /* ManagedChannel+CoreDataClass.swift in Sources */,
 				0971BA3C29AF9CA5007A03CC /* VMedia.xcdatamodeld in Sources */,
 				0971BA1329AF4492007A03CC /* Router.swift in Sources */,
 				0971BA1529AF4841007A03CC /* Presentable.swift in Sources */,
-				0971BA9929B256F3007A03CC /* TopLeftDecorationView.swift in Sources */,
+				0971BA9929B256F3007A03CC /* GuideDateInformationView.swift in Sources */,
 				0971BA4A29AF9E15007A03CC /* ProgramsCache+CoreDataProperties.swift in Sources */,
 				0971BA8629B1E5E5007A03CC /* TvProgramScheduleBuilder.swift in Sources */,
 				0971B9FB29AF318C007A03CC /* TvProgram.swift in Sources */,

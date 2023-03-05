@@ -21,7 +21,7 @@ final class SpreadsheetLayout: UICollectionViewLayout {
     
     enum ViewKindType: String {
         case channelInformation = "ChannelInformationView"
-        case topLeftDecorationView = "TopLeftDecorationView"
+        case guideInformation = "GuideInformation"
     }
     
     lazy var channelRowCache = [UICollectionViewLayoutAttributes]()
@@ -72,6 +72,9 @@ final class SpreadsheetLayout: UICollectionViewLayout {
         for item in 0 ..< maxItems {
             let topColumnWidth = delegate.spreadsheet(layout: self, widthForColumnAtIndex: item)
             columnWidths.append(topColumnWidth)
+            
+            
+            
         }
         
         //Cell Data Setup
@@ -91,24 +94,27 @@ final class SpreadsheetLayout: UICollectionViewLayout {
             self.cellCache.append(sectionAttributes)
             currentCellYoffset += sectionHeight
         }
+        
+        
+        
         //Top Left Decoration View
         let numberOfSections = collectionView.numberOfSections
         if numberOfSections > 0 {
             if let leftRowWidth = widthTuple.left {
                 if maxTopColumnHeight > 0 {
-                    let topLeftAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ViewKindType.topLeftDecorationView.rawValue, with: IndexPath(item: 0, section: 0))
+                    let topLeftAttributes = UICollectionViewLayoutAttributes(forSupplementaryViewOfKind: ViewKindType.guideInformation.rawValue, with: IndexPath(item: 0, section: 0))
                     topLeftAttributes.frame = CGRect(x: 0, y: 0, width: leftRowWidth, height: maxTopColumnHeight)
                     self.topLeftGapSpaceLayoutAttributes = topLeftAttributes
                 }
             }
-            
-            if self.contentWidth != currentCellXoffset {
-                collectionView.setContentOffset(CGPoint.zero, animated: false)
-            }
-            
-            self.contentWidth = currentCellXoffset
-            self.contentHeight = currentCellYoffset
         }
+        
+        if self.contentWidth != currentCellXoffset {
+            collectionView.setContentOffset(CGPoint.zero, animated: false)
+        }
+        
+        self.contentWidth = currentCellXoffset
+        self.contentHeight = currentCellYoffset
     }
     override public var collectionViewContentSize : CGSize {
         return CGSize(width: self.contentWidth, height: self.contentHeight)
@@ -171,7 +177,7 @@ final class SpreadsheetLayout: UICollectionViewLayout {
         switch viewKind {
         case .channelInformation:
             return self.channelRowCache[indexPath.section]
-        case .topLeftDecorationView:
+        case .guideInformation:
             return self.topLeftGapSpaceLayoutAttributes
         }
     }

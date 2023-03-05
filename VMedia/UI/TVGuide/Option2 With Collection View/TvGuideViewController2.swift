@@ -13,11 +13,12 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
     @IBOutlet weak var colectionView: UICollectionView!
     weak var output: TvGuideViewOutput?
     
-    private let defaultSupplementaryViewIdentifier = "DefaultSupplementaryViewIdentifier"
-    private let topLeftDateView = "TopLeftDecorationView"
+    private let channelsViewNibName = "ChannelInfoView"
+    private let channelViewIdentifier = "ChannelInfoViewIdentifier"
+    private let guideDateInformationViewNibName = "GuideDateInformationView"
+    private let guideDateInformationViewIdentifier = "GuideDateInformationViewIdentifier"
     private let defaultCellIdentifier = "DefaultCellIdentifier"
-    private let channelsViewNibName = "ChannelReusableView"
-    
+   
     private var dataSource: UICollectionViewDiffableDataSource<Int,TvProgram>!
     
     private var schedule = [TvSchedule]() {
@@ -40,9 +41,9 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
         self.colectionView.collectionViewLayout = layout
         
         //Register Supplementary-View
-        self.colectionView.register(UINib(nibName: channelsViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.channelInformation.rawValue, withReuseIdentifier: self.defaultSupplementaryViewIdentifier)
+        self.colectionView.register(UINib(nibName: channelsViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.channelInformation.rawValue, withReuseIdentifier: self.channelViewIdentifier)
         
-        self.colectionView.register(UINib(nibName: topLeftDateView, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.topLeftDecorationView.rawValue, withReuseIdentifier: topLeftDateView)
+        self.colectionView.register(UINib(nibName: guideDateInformationViewNibName, bundle: nil), forSupplementaryViewOfKind: SpreadsheetLayout.ViewKindType.guideInformation.rawValue, withReuseIdentifier: self.guideDateInformationViewIdentifier)
         
         //DataSource
         dataSource = UICollectionViewDiffableDataSource(collectionView: colectionView, cellProvider: { collectionView, indexPath, model in
@@ -58,13 +59,13 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
             }
             switch viewKind {
             case .channelInformation:
-                let channelInfoView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.defaultSupplementaryViewIdentifier, for: indexPath) as!
-                ChannelReusableView
+                let channelInfoView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.channelViewIdentifier, for: indexPath) as!
+                ChannelInfoView
                 channelInfoView.configure(with: self.schedule[indexPath.section].tvChannel)
                 return channelInfoView
-            case .topLeftDecorationView:
-                let decorationView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.topLeftDateView, for: indexPath) as!
-                TopLeftDecorationView
+            case .guideInformation:
+                let decorationView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.guideDateInformationViewIdentifier, for: indexPath) as!
+                GuideDateInformationView
                 decorationView.configure(with: "Date")
                 return decorationView
             }

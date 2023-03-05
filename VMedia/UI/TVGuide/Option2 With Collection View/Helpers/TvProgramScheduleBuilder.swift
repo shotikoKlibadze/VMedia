@@ -10,6 +10,7 @@ import Foundation
 
 struct TvSchedule {
     
+    let date = Date()
     let tvChannel: TvChannel
     let programs: [TvProgram]
     
