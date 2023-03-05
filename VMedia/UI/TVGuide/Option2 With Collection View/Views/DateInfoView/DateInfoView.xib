@@ -13,15 +13,45 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DateInfoView" customModule="VMedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNa-P2-NoP">
+                    <rect key="frame" x="5" y="1" width="383" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-2h-tb0">
+                            <rect key="frame" x="0.0" y="13.666666666666664" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstItem="Fwk-2h-tb0" firstAttribute="leading" secondItem="aNa-P2-NoP" secondAttribute="leading" id="0C9-f1-d3G"/>
+                        <constraint firstAttribute="height" constant="48" id="3pq-y1-Try"/>
+                        <constraint firstItem="Fwk-2h-tb0" firstAttribute="centerY" secondItem="aNa-P2-NoP" secondAttribute="centerY" id="hWX-U2-tgB"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="aNa-P2-NoP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="I8X-Co-xAu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aNa-P2-NoP" secondAttribute="trailing" constant="5" id="Ogr-PU-Ubk"/>
+                <constraint firstItem="aNa-P2-NoP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iXn-zQ-JeE"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="Fwk-2h-tb0" id="otj-1D-06n"/>
+            </connections>
             <point key="canvasLocation" x="-42" y="42"/>
         </view>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

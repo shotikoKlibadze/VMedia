@@ -36,7 +36,7 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
     
     func setupCollectionView() {
         
-        let layout = SpreadsheetLayout(delegate: self)
+        let layout = SpreadsheetLayout(delegate: self, topLeftDecorationView: UINib(nibName: "DateInfoView", bundle: nil))
         layout.stickyChannelsHeader = true
         self.colectionView.collectionViewLayout = layout
         

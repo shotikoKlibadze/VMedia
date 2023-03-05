@@ -9,12 +9,10 @@ import UIKit
 
 class DateInfoView: UICollectionReusableView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet private weak var dateLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        print("awaken")
     }
-    */
-
 }
