@@ -78,8 +78,10 @@ private extension UI.TvGuide.Interactor {
             case .success(let channels):
                 let tvChannelEntities = channels.map({TvChannel(with: $0)})
                 output?.didFetchTvChannels(tvChannels: tvChannelEntities)
-                localService.deleteCachedData(completion: {_ in })
-                localService.cache(channels: tvChannelEntities, date: currentDate) { _ in }
+                localService.deleteCachedChannelData { [weak self] error in
+                    guard error == nil, let self else { return }
+                    self.localService.cache(channels: tvChannelEntities, date: self.currentDate) { _ in }
+                }
             case .failure(let error):
                 output?.errorFetchingTvChannels(error: error)
             }
@@ -94,8 +96,10 @@ private extension UI.TvGuide.Interactor {
             case .success(let tvPrograms):
                 let tvProgramEntities = tvPrograms.map({TvProgram(with: $0)})
                 output?.didFetchTvProgramms(tvProgramms: tvProgramEntities)
-                localService.deleteCachedData(completion: {_ in })
-                localService.cache(programs: tvProgramEntities, date: currentDate) { _ in }
+                localService.deleteCachedProgramData { [weak self] error in
+                    guard error == nil, let self else { return }
+                    self.localService.cache(programs: tvProgramEntities, date: self.currentDate, completion: { _ in })
+                }
             case .failure(let error):
                 output?.errorFetchingTvProgramms(error: error)
             }

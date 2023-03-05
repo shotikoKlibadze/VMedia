@@ -46,8 +46,12 @@ final class CoreDataStack: TvGuideLocalDataService {
         retrievePrograms(completion: completion)
     }
     
-    func deleteCachedData(completion: @escaping (Error?) -> Void) {
-        deleteCache(completion: completion)
+    func deleteCachedProgramData(completion: @escaping (Error?) -> Void) {
+        emptyProgramsChache(completion: completion)
+    }
+    
+    func deleteCachedChannelData(completion: @escaping (Error?) -> Void) {
+        emptyChannelsChache(completion: completion)
     }
     
 }
@@ -110,11 +114,21 @@ private extension CoreDataStack {
         }
     }
     
-    func deleteCache(completion: @escaping (Error?) -> Void) {
+    func emptyProgramsChache(completion: @escaping (Error?) -> Void) {
+        perform { context in
+            do {
+                try ProgramsCache.deleteCache(in: context)
+                completion(nil)
+            } catch {
+                completion(error)
+            }
+        }
+    }
+    
+    func emptyChannelsChache(completion: @escaping (Error?) -> Void) {
         perform { context in
             do {
                 try ChannelsCache.deleteCache(in: context)
-                try ProgramsCache.deleteCache(in: context)
                 completion(nil)
             } catch {
                 completion(error)

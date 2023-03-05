@@ -12,7 +12,8 @@ protocol TvGuideLocalDataService {
     func cache(programs: [TvProgram], date: Date, completion: @escaping (Error?) -> Void)
     func fetchChannels(completion: @escaping (Result<CachedChannels,Error>) -> Void)
     func fetchPrograms(completion: @escaping (Result<CachedPrograms,Error>) -> Void)
-    func deleteCachedData(completion: @escaping (Error?) -> Void)
+    func deleteCachedProgramData(completion: @escaping (Error?) -> Void)
+    func deleteCachedChannelData(completion: @escaping (Error?) -> Void)
 }
 
 enum CachedPrograms {
