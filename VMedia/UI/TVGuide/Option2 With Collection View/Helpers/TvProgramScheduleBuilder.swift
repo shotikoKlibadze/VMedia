@@ -10,13 +10,12 @@ import Foundation
 
 struct TvSchedule {
     
-    let date = Date()
     let tvChannel: TvChannel
     let programs: [TvProgram]
     
     init(tvChannel: TvChannel, programs: [TvProgram]) {
         self.tvChannel = tvChannel
-        self.programs = programs
+        self.programs = programs.sorted(by: { $0.startDate < $1.startDate})
     }
 }
 

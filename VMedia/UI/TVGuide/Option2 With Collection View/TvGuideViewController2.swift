@@ -18,7 +18,7 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
     private let timeInfoViewNibName = "TimeInfoView"
     private let imeInfoViewIdentifier = "GuideDateInformationViewIdentifier"
     private let defaultCellIdentifier = "DefaultCellIdentifier"
-   
+       
     private var dataSource: UICollectionViewDiffableDataSource<Int,TvProgram>!
     
     private var schedule = [TvSchedule]() {
@@ -52,7 +52,7 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
             return cell
         })
         
-        //Supplementar AKA Channels header
+        //Supplementary views
         dataSource.supplementaryViewProvider = { [weak self] collectionView , kind , indexPath in
             guard let self, let viewKind = SpreadsheetLayout.ViewKindType(rawValue: kind) else {
                 return nil
@@ -66,7 +66,6 @@ final class TvGuideViewController2: UIViewController,StoryboardLoadable, TvGuidV
             case .timeInformation:
                 let decorationView = collectionView.dequeueReusableSupplementaryView(ofKind: viewKind.rawValue, withReuseIdentifier: self.imeInfoViewIdentifier, for: indexPath) as!
                 TimeInfoView
-                decorationView.configure(with: "Date")
                 return decorationView
             }
         }
